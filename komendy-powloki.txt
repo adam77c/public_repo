@@ -1,0 +1,762 @@
+BADANIE SYSTEMU
+echo $SHELL <-jaka powłoka jest używana
+lsb_release -a <-wersja dystrybucji
+uname -r <-wersja kernela
+more /etc/os-release <-pełne dane dystrybucji
+lsblk <-punkty montowania (w tym dyski i partycje oraz rozmiary)
+df -Th <-systemy plików i ich rozmiary
+top <-pamięć i procesy
+sudo journalctl -b -1 <-logi z ostatniego uruchomienia
+id <-pokazuje bieżącego użytkownika, jego UID oraz grupy do których należy
+getent passwd {1000..6000} <-pokazuje normalnych użytkowników systemu
+cat /etc/passwd <-wszystkie konta w systemie (użytkownicy oraz systemowe)
+ip a <-pokazuje interfejsy sieciowe (w tym również adres IP hosta)
+netstat -ie <-sprawdza interfejsy sieciowe w systemie
+xrandr <-pokazuje dostępne tryby graficzne (rozdzielczość i odświeżanie)
+echo $XDG_SESSION_TYPE <-pokazuje sesję menedżera graficznego (X11 albo Wayland)
+
+systemd-analyze <-pokazuje czas rozruchu dystrybucji
+systemd-analyze blame <-pokazuje dokładne czasu rozruchu usług przy starcie dystrybucji 
+systemd-analyze critical-chain <-pokazuje czas rozruchu kluczowych usług przy starcie dystrybucji
+systemctl --failed <-pokazuje usługi których rozruch się nie powiódł
+systemctl list-units <-pokazuje wszystkie działające jednostki
+systemctl is-enabled ufw <-pokaże czy "ufw" jest włączony czy nie (enable / disable)
+systemctl list-unit-files --type=service <pokazuje wszystkie usługi (włączone i wyłączone)
+systemctl list-unit-files --type=socket <-pokazuje wszystkie dostępne gniazda
+systemctl mask cups.socket <-maskowanie (nie pozwolenie na start) gniazda cups przy rozruchu dystrybucji ("unmask" zdejmie maskę)
+systemctl show ufw <-pokazuje wszystkie informacje o usłudze ufw
+
+ss -tln <-pokazuje nasłuchujące gniazda TCP (sockets)
+ss -uln <-pokazuje aktywne gniazda update
+
+systemctl emergency <-wejście do trybu ratunkowego
+
+lsof <-pokazuje otwarte pliki (list open files)
+lsof -u nazwa_użytkownika <-jakie pliki ma otwarte wskazany użytkownik 
+lsof -i :80 <-pokaże jaki program słucha na porcie "80"
+lsof -i tcp <-jakie procesy używają protokołu tcp
+lsof -p PID <-jakie pliki ma otwarte proces o numerze PID (w kolumnie FD szukać wpisu "txt")
+lsof -p PID | grep bin <-gdzie szukać binarki procesu o numerze PID 
+lsof -p PID | grep .so <-jakie biblioteki współdzielone ma otwarte proces o numerze PID
+lsof -p PID | grep log <-do jakiego pliku zapisuje logi proces o numerze PID
+lsof ścieżka_do_biblioteki <-pokaże jakie procesy korzystają z tej biblioteki teraz (przydatne gdy był update ale nie wszystkie serwisy zostały zrestartowane, przez co nie wszystkie używają nowszej wersji)
+
+curl wttr.in?format=3 <-pokazuje pogodę dla lokalizacji z której się łączy maszyna
+
+neofetch - dużo informacji o systemie (jądro, uptime, shell, rozdzielczość, CPU, GDP, MEM)
+ncdu - pokazuje co zużywa miejsce dyskowe sortowane od największego zasobu (wywoływać z SUDO żeby miał dostęp do wszystkich katalogów)
+tmux <- podział okna terminala (Ctrl+B + % | Ctrl+B + " | Ctrl+B + strzałki | exit)
+inxi -GSC -xx   <-pokazuje specyfikacje systemu i maszyny
+
+su -s <- super mode (nie trzeba wpisywać hasła ani sudo, przelogowuje na konto root - w Ubuntu nie ma zdefiniowanego hasła roota więc nie da się na niego zalogować bezpośrednio, a jedynie poprzez podniesienie uprawnień ze zwykłego konta usera bez przywilejów)
+su - <-uruchamia nową powłokę i wczytuje środowisko (m.in. katalog domowy) dla uprzywilejowanego użytkownika (root). Wyjście z tej powłoki za pomocą polecenia "exit"
+su -c 'polecenie' <-wykona "polecenie" w powłoce roota i wróci do naszej powłoki
+
+sudo polecenie <-wykonanie "polecenia" jako inny użytkownik (zwykle root), ale bez uruchamiania nowej powłoki, ani wczytywania środowiska innego użytkownika
+sudo -l <-pokazuje jakie uprawnienia zostaną nadane za pomocą polecenia "sudo"
+
+df <-miejsce zajmowane przez system plików (parametr -h pokazuje rozmiar w MB)
+df -hTx tmpfs <-pokazuje Najważniejsze informacje nt zajętości miejsca (h-format ilości miejsca czytelny dla ludzi, T-typ systemu plików, x-wyklucza następujący po nim parametr czyli tu tmpfs czyli tymczasowe punkty)
+watch df -hTx tmpfs <-monitoruje zmiany (nie wraca do promptu) w systemie plików i pokazuje co jest domontowywane (np. wpinany pendrive)
+watch <-wiloktrotne wywołanie komendy (np. "watch ls" będzie wywoływać komendę "ls" np. gdy czekamy na pobranie się pliku i jego pojawienie w katalogu)
+
+du <-miejsce zajmowane przez plik (podać jego nazwę jako parametr)
+du -h --max-depth 1 /home/nazwa_użytkownika <-pokazuje miejsce zajmowane przez katalogi w domowym folderze na głębokość 1 katalogu
+
+top <-wyświetla uruchomione procesy w czasie rzeczywistym (spacja odświeża, wyjście: q)
+htop <-bardziej rozbudowane i graficzne polecenie top (zazwyczaj wymaga doinstalowania)
+uptime <-jak długo trwa sesja
+"w" lub "who" <-pokazuje zalogowanych użytkowników (pisać bez cudzysłowów)
+whoami <-kto jest zalogowany (z jakiego konta działamy)
+last <-ostatnio zalogowani użytkownicy
+free <-pamięć ram i swap
+lsmod <-listowanie aktywnych modułów
+groups <-pokazuje do jakich grup należymy
+
+cat /etc/shells <-pokazuje wszystkie dostępne w systemie powłoki
+bash -version pokazuje wersję konsoli (jeśli jest nią bash)
+grub-install -v pokazuje wersję GRUB-a
+X -version pokazuje wersję xorg-a (środowiska X-window)
+glxinfo | grep "OpenGL version" <-pokazuje wersję OpenGL
+glxinfo | grep rendering sprawdza czy jest dostępna akceleracja 3D
+cat /proc/cpuinfo pokazuje informację o procesorze 
+cat /proc/meminfo pokazuje informacje o pamięci 
+cat /proc/asound/cards pokazuje informacje o karcie muzycznej
+lspci pokazuje informacje o karcie graficznej i innych urządzeniach podłączonych do magistrali pci
+lsusb -v pokazuje informacje o każdym urządzeniu podpiętym pod usb (nawet jeśli nieobsługiwanym przez linux - jeśli nie ma tzn. że nie działa)
+xev wywołuje okno do testowania klawiatury, myszy i touchpada
+aplay -l pokazuje listę urządzeń odtwarzających dzwięk w systemie
+acpi -V informacje o baterii w laptopie
+nproc  pokazuje ilość procesorów logicznych 
+head -25 /proc/cpuinfo | grep bugs <-pokazuje listę podatności procesora (np. spectre, meltdown...)
+cat /proc/cmdline pokazuje parametry jądra (kernela) użyte przy uruchamianiu systemu
+
+tail -f /ścieżka <-śledzenie w czasie rzeczywistym zmian w pliku zadeklarowanym w ścieżce (przydatne do przeglądania logów)
+tail -f /var/log/messages <-podglądanie działania systemu prawie w czasie rzeczywistym
+
+
+ALIASY
+alias i="sudo apt install" <- tworzy alias "i" dla komendy "sudo apt install"
+nano ~/.bashrc <- edytuje plik ustawień powłoki (tu na końcu dodać aliasy, bo one są przechowywane po utworzeniu tylko w bieżącej sesji, jeśli nie są dodane w pliku konfiguracyjnym powłoki)
+alias l5='ls -l --color=tty' <-tworzy alias o nazwie "l5" dla ciągu poleceń (stringa) "ls -l..."
+unalias l5 <-usuwa alias "l5"
+alias <-użyte bez argumentów pokazuje listę aliasów zdefiniowanych w systemie
+source ~/.bashrc <-przeładowanie pliku konfiguracyjnego powłoki bash (żeby zmiany działały bez wylogowywania)
+
+
+ZMIENNE
+env <-wyświetla zmienne środowiskowe (zdefiniowane w systemie) pisane wielkimi literami (własne zmienne piszemy małymi literami)
+
+nazwa_zmiennej=zmienna <-przypisanie nazwa_zmiennej
+echo $nazwa_zmiennej <-użycie zmiennej dla polecenia "echo"
+
+nazwa_zmiennej=$(komenda i jej parametry) <-wynik komendy zapisany jako zmienna (jej użycie pokaże efekt działania komendy). Nawias otwiera subshell dla koemdy którą zawiera.
+file_list=$(ls -l /etc) <-utworzenie zmiennej "file_list" zawierającej wynik komendy "ls -l /etc"
+
+
+TERMINAL
+echo $? <-pokazuje kod wykonania poprzednio użytej komendy (jeśli zwróci wynik "0" to była wykonana poprawnie, jeśli zwróci "1" to był błąd)
+sudo !! <-wywołuje poprzednią komendę z uprawnieniami "sudo"
+komenda1; komenda2 <-wykonaj komendę 1, a po niej komendę 2
+komenda1 && komenda2 <-wykonaj komendę 1 i jeśli nie ma błędu to wykonaj komendę 2
+komenda | column -t <-porządkuje kolumny na wyjściu komendy (zwiększa czytelność wyniku komendy)
+sudo visudo <-otwiera plik konfiguracyjny sudo w edytorze nano
+
+CTRL+R <-wyszukiwanie komend w historii konsoli
+!102 <-uruchom komendę numer 102 na liście historii konsoli (zazwyczaj poprzedzone poleceniem "history")
+HISTTIMEFORMAT="%Y-%m-%d %T " <-dodaje w trwającej właśnie sesji konsoli info o czasie wywołania polecenia, gdy używamy komendy "history" (aby działało zawsze należy dodać polecenie do pliku ~/.bashrc)
+.bash_history <-plik w katalogu domowym zawierający historię poleceń
+spacja przed komendą nie zapisuje komendy w historii basha
+
+F11 <-konsola na pełny ekran
+CTRL+U <-usunięcie wszystkich znaków z całej linii komend (szybsze niż backspace)
+CTRL+Y <-wklejenie usuniętego tekstu (np. przez CTRL+U)
+CTRL+W <-usunięcie słowa poprzedzającego kursor
+CTRL+A <-przestawienie kursora na pierwszą pozycję w linii komend (szybciej niż przejście strzałką)
+CTRL+E <-przestawienie kursora na ostatnią pozycję w linii komend
+ALT+F  <-przesuwa kursor o jeden wyraz do przodu
+ALT+B  <-przesuwa kursor o jeden wyraz do wstecz
+
+ALT+L  <-przekształca litery od miejsca położenia kursora do końca wyrazu na małe litery 
+ALT+U  <-przekształca litery od miejsca położenia kursora do końca wyrazu na wielkie litery
+
+clear <-wyczyszczenie ekranu w konsoli
+CTRL+L <-wyczyszczenie ekranu w konsoli (prompt przeniesiony na górę ekranu, historia nadal dostępna do scrollowania)
+reset <-czyści całą sesję konsoli (przydatne, gdy coś złego dzieje się z sesją)
+
+ALT+F1 przejście do konsoli wirtualnej tty1
+CTRL+ALT+F7 wyjście z konsoli wirtualnej tty1 do GUI
+sudo chvt 1 <-przełączenie się na konsolę tty1 (jeśli coś jest nie tak i rzuciło do innej konsoli, przez co nie działa kombinacja CTRL+ALT+F7
+
+cd - <-przenosi do poprzedniego katalogu
+cd ~ <-przenosi do katalogu domowego (/home)
+
+pushd /var <-przenosi do katalogu "var", zapamiętując z jakiego katalogu nastąpiło przejście (katalog wyjściowy zostaje zapamiętany, aby można było do niego wrócić w dowolnym momencie komendą "popd")
+popd <-przenosi do katalogu z którego nastąpiło przejście komendą "pushd", nawet jeśli po niej przechodzenie między katalogami było z użyciem komendy "cd"
+
+> output_file.txt <-utworzenie pustego pliku (użycie przekierowania ">" bez podanej komendy) tekstowego (format i rozszerzenie mogą być dowolne)
+truncate -s 0 nazwa_pliku <-zmniejsza, ale nie kasuje rozmiar pliku do zero bitów (0 to rozmiar do którego jest zmniejszany plik)
+sudo find /var/log -type f -name *.log -exec truncate -s 0 {} +        <-wyszukuje w katalogu var pliki z rozszerzeniem log i zmniejsza ich rozmiar do zera, znak plusa kończy komendę truncate, która została dodana przez -exec do wyników wyszukiwania komendy find
+
+cal <-wyświetla kalendarz
+
+type polecenie <-pokazuje czym jest "polecenie" (program wykonywalny, polecenie wbudowane, funkcja powłoki, alias)
+which <-pokazuje lokalizację pliku wykonywalnego (działa tylko dla nich)
+whatis polecenie <-jednowierszowy opis "polecenia"
+
+
+
+
+STRUMIENIE (deskryptory plików)
+wejścia 0 (standardowo: klawiatura)
+wyjścia 1 (standardowo: ekran)
+błędów  2 (standardowo: ekran)
+
+ls /nieistniejący_katalog 2> ls-error.txt <-komunikaty błędu komendy listującej katalog który nie istnieje zostaną przekazane do pliku tekstowego (użyto tu deskryptora "2")
+ls /katalog &> ls-output.txt <-operator "&>" przekieruje strumień wyjścia i strumień błędów do pliku (działa z nowymi powłokami)
+ls /nieistniejący_katalog 2> /dev/null <-komunikaty o błędach są przekierowane na śmietnik (nie będą wyświetlane)
+ls -A <-pokaże również ukryte pliki (almost all)
+
+tee <-pobiera dane ze standardowego wejścia i przekierowuje je na standardowe wyjście oraz do pliku
+ls /usr/bin | tee ls-out.txt | grep zip <-polecenie tee zadziała jak trójnik hydrauliczny, tzn. przechwyci zawartość folderu do pliku zanim zostanie ona przefiltrowana (tee umożliwia dalszy przepływ)
+
+
+
+
+
+LOGI SYSTEMOWE
+W celu debugowania błędów systemowych możemy wyświetlać w czasie rzeczywistym log systemowy bezpośrednio w konsoli:
+tail -f /var/log/syslog
+Wyświetlanie logów kończymy poprzez naciśnięcie CTRL+C.
+
+sudo journalctl -b -1        <-pokazuje log z ostatniego uruchomienia, użyć również -2 oraz -3 itd.
+dmesg                        <- bezpośredni log z kernela
+
+
+
+
+GRAFIKA
+sudo killall Xorg - restart podsystemu graficznego i wylogowanie KUBUNTU 18.04
+sudo /etc/init.d/gdm restart -restartuje X i powraca do ekranu logowania
+CTRL+ALT+BACKSPACE - restart X gdy zawisną
+sudo service lightdm restart - restart grafy w Ubuntu
+
+
+
+
+sudo hostnamectl set-hostname tecmint <-zmiana nazwy hosta (nazwa kompa, także część promptu w terminalu) na "tecmint"
+
+
+
+DYSKOWE
+df pokazuje rozmiar i stopień wykorzystania zamontowanych obecnie systemów plików (df -Th)
+sudo fdisk -l pokazuje dyski i ich systemy plików
+lsblk pokazuje dyski w formie drzewa (bardziej czytelne nazwy dysków)
+blkid pokazuje identyfikatory UUID (Universally Unique Identyfier) systemów plików
+
+mount pokazuje zamontowane rzeczy
+umount /dev/sdb1 - odmontowanie pendrive (najpierw sprawdzic jakie jest jego oznaczenie jako dysku)
+
+hdparm pokazuje i ustawia parametry dla dysków twardych
+sudo hdparm -Tt /dev/sda    <-pokazuje prędkość dysku twardego
+sudo hdparm -t-direct /dev/sda <-test prędkości odczytu dysku
+
+sudo mkfs.ext4 /dev/sdb    - formatuje dysk "sdb" z systemem plików "ext4"
+
+sudo e2fsck /dev/sdb       - sprawdza dysk "sdb", nie używać na zamontowanym systemie plików, chyba że zamontowana partycja jest tylko do odczytu i w trybie jednego użytkownika (single user)f
+
+sudo smartctl -i -H /dev/sda    - parametr "i" wyświetla info o urządzeniu dyskowym (tu "sda") a parametr "H" wyświetla info o wyniku testu S.M.A.R.T. (kondycja hdd/ssd)
+sudo smartctl -t short /dev/sda   - wykonaj test SMART dysku "sda" (parametr "short" wskazuje długość testu, może być long)
+sudo smartctl -l selftest /dev/sda    - wyświetla wyniki testu SMART z poprzedniej linijki ALE PAMIĘTAĆ O ODCZEKANIU CZASU NA WYKONANI TESTU
+
+
+Dostęp do pendrive na serwerze:
+lsblk 
+sudo  mkdir /media/usb
+sudo mount /dev/sdb1 /media/usb
+cd /media/usb
+ls -l
+
+
+dd if=/dev/sdb of=/dev/sdc <-skolonowanie całego urządzenia sdb do urządzenia sdc
+dd if=/dev/sdb of=flesh_drive.img <-sklonowanie urządzenia sdb do obrazu jego dysku w celu późniejszego zapisu do urządzenia fizycznego
+dd if=/dev/cdrom of=ubuntu.iso <-stworzenie obrazu ISO płyty cdrom lub dvd, ale nie cd audio (płyty cd audio nie mają systemu plików)
+genisoimage -o cd-rom.iso -R -J ~/cd-rom-files <- tworzy obraz ISO o nazwie "cd-rom.iso" z plików w katalogu o nazwie "cd-rom-files" (opcje -R i -J włączają obsługę długich nazw plików w Linux i Windows)
+
+wodim dev=/dev/cdrw blank=fast <-wykasowanie płyty CD RW
+wodim dev=/dev/cdrw image.iso <-wypalenie obrazu ISO na płycie (domyślny tryb zapisu to track-at-once, dostępny jest "-dao", czyli disk-at-once oraz opcja "-v" wyświetlająca wszystkie informacje)
+
+Montowanie ISO jako dysku:
+mkdir /mnt/iso-image
+mount -t iso9660 -o loop image.iso /mnt/iso-image
+
+
+NALA (LEPSZY MANAGER PAKIETÓW NIŻ APT)
+sudo nala fetch <-aktualizacja serwerów lustrzanych
+nala history <-historia aktualizacji
+sudo nala history undo 1 <-cofnij aktualizację o numerze 1 z indeksu historii aktualizacji
+
+
+
+
+
+
+
+
+AKTUALIZOWANIE DYSTRYBUCJI
+dpkg --audit <-pokazuje czy są jakieś nieskonfigurowane pakiety (jeśli nie ma nic to po prostu wyświetli się znak gotowości linii komend)
+sudo dpkg --configure -a <-pokazuje czy są błędy w pakietach
+dpkg -l <-wyświetla zainstalowane pakiety
+dpkg -s nazwa_pakietu <-sprawdza czy "nazwa_pakietu" jest zainstalowana
+apt-cache show nazwa_pakietu <-informacje o zainstalowanym pakiecie
+dpkg -S nazwa_pliku <-pokazuje który pakiet zainstalował plik
+
+
+Pełna aktualizacja bieżąca (listy pakietów, pakietów, dystrybucji, niepotrzebnych pakietów):
+sudo -- sh -c 'apt-get update; apt-get upgrade -y; apt-get dist-upgrade -y; apt-get autoremove -y; apt-get autoclean -y'
+
+sudo do-release-upgrade <-wymuszenie aktualizacji do następnej wersji dystrybucji
+
+sudo nano /etc/update-manager/release-upgrades <-otwiera edycje ustawien wyszukiwania aktualizacji dystrybucji
+
+sudo apt update && sudo apt dist-upgrade
+
+sudo ppa-purge ppa:kubuntu-ppa/backports <-cofa aktualizacje wgrane z danego repozytorium (w tym wypadku z kubuntu-ppa/backports)
+
+sudo apt-get install nazwa_pakietu
+
+sudo nano /etc/apt/sources.list <- edycja pliku z listą repozytoriów z których są pobierane aktualizacje
+
+sudo cd /etc/apt/sources.list.d <- przejście do katalogu z którego są pobierane dodatkowe listy repozytoriów do uwzględnienia aktualizacji (tu głównie są repo aplikacji doinstalowanych czyli niedomyślnych)
+
+sudo dpkg -i linux*.deb <- aktualizacja kernela z pobranego na dysk pliku "linux*"
+
+apt rdepends clamav <-pokazuje zależności programu "clamav"
+
+
+
+sudo apt-mark hold nginx <-wstrzymuje aktualizacje pakietu "nginx" do czasu wydania komendy "unhold" (samo apt, bez apt-mark)
+sudo apr unhold nginx <-usuwa blokadę hold dla pakietu "nginx" (będzie on ponownie aktualizowany)
+
+
+
+
+
+
+
+PROCESY
+ps aux | grep nginx - pokazuje szczegóły wszystkich instancji procesu nginx
+
+ps - szczegółowy spis procesów
+
+Najważniejsze parametry polecenia ps:
+-e wyświetli każdy proces uruchomiony w systemie
+-l szczegółowy opis
+-f opis szczegółowy, krótszy od -l
+-H pokazuje spis procesów w formie drzewa
+a wyświetla wszystkie procesy
+x wyświetla procesy uruchomione bez terminala
+u podaje nazwę użytkownika który uruchomił proces
+f wyświetla procesy w formie drzew
+
+Po wydaniu polecenia ps aux poszczególne kolumny oznaczają:
+USER – nazwa użytkownika, właściciela procesu
+PID – identyfikator procesu
+%CPU – szacowany procent użycia procesora, obliczany poprzez podzielenie czasu użycia procesora przez proces, przez czas uruchomienia
+%MEM – szacowany procent użycia pamięci
+VSZ – ilość użytej pamięci wirtualnej w KB
+RSS – wykorzystana pamięć fizyczna w KB
+TTY – terminal na którym uruchomiono proces
+STAT – stan procesu, D oczekujący na dane z I\O, R działający, S uśpiony, T zatrzymany, X proces martwy(nie powinien być wyświetlany), Z proces zombie
+START – godzina uruchomienia procesu
+TIME – łączny czas zużycia procesora
+COMMAND – polecenie które uruchomiło proces
+
+pstree <-wyświetla proecesy w formie drzewa (parametr -a pokazuje dodatkowo polecenie które uruchomiło proces)
+pidof <-wyświetla nr PID procesu (kill 'pidof nazwa_procesu' - pozwala zamknąć proces nie znając jego PID-u)
+renice <-zmienia bycie miłym działającego procesu (najwyższy to "-20" a najniższy to "19") (np.: renice 19 'pidof top') obniży priorytet procesu top do najniższego (19)
+renice -n 5 -p identyfikator_procesu <-obniży ważność procesu poprzez zwiększenie jego bycia miłym do "5"
+nice <-ustali poziom bycia miłym dla uruchamianego procesu
+pgrep firefox <-pokaże PID procesu firefox
+
+fuser <- pokazuje które procesy używają plików, gniazd lub systemów plików o podanych nazwach
+sudo fuser -v 1716/tcp <-pokaże jaki program działa na porcie "1716" na protokole "tcp"
+
+sudo lsof -i <-wyświetla listy otwartych plików oraz programów które ich używają
+lsof -u nazwa_użytkownika <-pokazuje listę plików otwartych przez wskazanego użytkownika
+lsof -u ^root <-pokazuje otwarte pliki przez użytkowników z wyłączeniem użytkownika "root"
+lsof -c apache2 <-pokauje pliki otwarte przez proces "apache2"
+
+
+
+
+ZADANIA
+Ctrl+Z zatrzymuje zadania (nie jest przydzielany im czas procesora, ale nie są zamknięte - zostają przeniesione w tło (background))
+jobs - pokazuje zadania i ich stan (parametr -l pokaże PID zadania)
+& na końcu komendy powoduje uruchomienie zadania w tle
+bg %nr_zadania (np.: bg %1) uruchamia zatrzmane w tle zadanie
+fg %nr_zadania przenosi zadanie uruchomione w tle na pierwszy plan (uruchamia zatrzymany proces - przywraca go)
+fg - gdy zatrzymamy proces przez CTRL+Z można go wznowić komendą fg (wysyła sygnał SIGCONT) (fg pochodzi od foreground)
+kill %nr_zadania zakończy zatrzymane zadanie (domyślnie zostanie wysłany sygnał TERM (Terminate) jeśli nie zostanie sygnał wymieniony w poleceniu)
+polecenie > /dev/null przekierowanie standardowego wyjścia i standardowego wyjścia błędów do śmietnika (polecenie działające w tle nie będzie wywalało komunikatów na ekran)
+
+
+CZĘSTO UŻYWANE SYGNAŁY
+1  HUP Hung up, sygnał wykorzystywany przez wiele demonów do ponownej inicjalizacji (ponownie zostanie uruchomiony i ponownie odczyta swoją konfigurację)
+2  INT Interrupt, zatrzymuje działanie programu (działa jak CTRL+C w terminalu)
+9  KILL sygnał specjalny nie jest wysyłany do programu tylko jądro natychmiast kończy proces, brak możliwości posprzątania po sobie lub zapisania efektów, używać w ostateczności
+15 TERM Terminate, domyślny sygnał wysyłany przez polecenie "kill", jeśli program jest wystarczająco żywy, by przyjmować sygnały to ten zakończy jego działanie
+18 CONT Continue, wznawia proces zatrzymany przez STOP lub TSTP, ten sygnał wysyłają polecenia fg i bg
+19 STOP sygnał powoduje że proces wstrzymuje działanie lecz nie kończy pracy, podobnie jak KILL nie jest przeznaczony dla procesu docelowego więc nie może być zignorowany
+20 TSTP zatrzymanie terminala, wysyłany przez terminal gdy została użyta kombinacja CTRL+Z, inaczej niż w przypadku STOP jest przechwytywany przez program, ale może być zignorowany
+
+kill -l <-pełna lista sygnałów
+
+sudo killall nazwa_programu <-ubicie wszystkich procesów o takiej nazwie
+
+
+
+
+SYSTEMD - ZARZĄDZANIE USŁUGAMI
+systemctl status mysql <-pokazuje status usługi mysql
+systemctl start mysql <- uruchom usługę mysql (uruchominie teraz, jednorazowo)
+systemctl enable mysql <- aktywuj uruchamianie przy starcie systemu usługi mysql (automatyczne uruchamianie)
+systemctl stop mysql <- zatrzymaj usługę mysql
+systemctl disable mysql <- zaprzestań uruchamiania usługi mysql przy starcie systemu
+systemctl reload mysql <- ponowne wczytanie pliku konfiguracyjnego usługi mysql (przydatne po aktualizacji konfiguracji usługi)
+systemctl restart mysql <- ubicie usługi mysql, jej ponowne uruchomienie wraz z wczytaniem jej pliku konfiguracyjnego
+systemctl daemon-reload <—ponownie ładuje konfiguracje wszystkich jednostek
+
+system udev status <-sprawdzenie statusu usługi o nazwie "udev" w starszych systemach
+komendy start i stop działają tak samo w przypadku system jak i systemctl
+
+systemctl -p UnitPath show <-pokazuje katalogi konfiguracji systemu systemd
+
+
+
+
+
+SIECI
+sudo iwlist scan - szuka sieci bezprzewodowych
+netstat - połączenia sieciowe, jakie usługi działają na jakich portach, jakie porty są otwarte 
+sudo netstat -tulpn <-dobrze odfiltrowane polecenie netstat (bez śmieci) pokazujące m.in. otwarte porty i która usługa na którym jest porcie (sudo odkrywa ostatnią kolumnę wyników z nr PID)
+parametr i <-pokazuje szczegóły nt interfejsów
+parametr r <-pokazuje tablicę routingu (przez jakie IP idzie komunikacja)
+ip addr show <-pokazuje obecnie używany adres IP
+
+iperf test szybkości sieci między dwoma maszynami (doinstalować)
+iperf -s <-odpala na pierwszym kompie serwer który nasłuchuje połączenia
+iperf -c 192.168.0.125 <-odpala klienta na drugim kompie który łączy się z lokalnym adresem 192.168.0.125 żeby wysłać do niego pakiety i tym samym przetestować prędkość połączenia
+
+
+FIREWALL (zawsze z sudo)
+ufw status - pokazuje czy firewall jest włączony
+ufw enable - włączenie
+ufw disable - wyłączenie
+ufw allow nr_portu - zezwala na ruch na nr_portu
+ufw deny nr_portu
+ufw deny from ip - blokuje adres ip
+
+
+
+
+SSH (domyślny port: 22)
+mkdir ~/.ssh && chmod 700 ~/.ssh <-użyć lokalnie aby założyć katalog dla kluczy ssh
+
+sudo ssh-keygen -t ed25519 -C "komentarz" -f nazwa_pliku <-generuje silną parę kluczy (komentarz w cudzysłowiu, nazwa_pliku bez cudzysłowiu)
+sudo chmod 444 "nazwa_pliku_klucza_prywatnego" <-zmienia uprawnienia aby można było czytać z tego pliku, gdyby była potrzeba (czytać mogą: właściciel, grupa, wszyscy)
+
+ssh nazwa_użytkownika@host -p 22 <-łączy z "host" na porcie 22
+ssh -i "nazwa_pliku_klucza_prywatnego" użytkownik@adres_serwera <-łączy ze zdalnym serwerem z użyciem klucza prywatnego
+
+ssh-copy-id -i ~/.ssh/nazwa_klucza_publicznego nazwa_użytkownika@adres_serwera <-kopiuje publiczny klucz ssh na zdalny serwer
+ssh-keyscan -H 192.168.1.162 >> ~/.ssh/known_hosts <-dodaje do lokalnego pliku "known_hosts" informacje (SSH fingerprint) o serwerze "192.168.1.162" z którym będzie łączenie
+ssh-add <-dodaje tożsamość do agenta uwierzytelniania
+
+sudo sshd -t <-sprawdza składnię pliku konfiguracyjnego serwera ssh i jeśli nie znajdzie błędów to nie wyświetli żadnego komunikatu (przełącznik "-t" oznacza "test")
+
+ssh -Q help <-pokazuje algorytny szyfrowania obsługiwane przez OpenSSH (potrzebne np. w celach zachowania zgodności)
+ssh -Q sig <-generuje listę sygnatur algorytmów
+
+ssh -Q nazwa_opcji <-wyświetla listę obsługiwanych ...:
+• cipher. Wyświetla listę obsługiwanych algorytmów szyfrowania symetrycznego.
+• cipher-auth. Wyświetla listę obsługiwanych algorytmów szyfrowania symetrycznego razem z szyfrowaniem uwierzytelniania.
+• compression. Wyświetla listę obsługiwanych typów kompresji.
+• mac. Wyświetla listę obsługiwanych kodów spójności wiadomości. Umożliwiają one ochronę spójności i autentyczności danych wiadomości.
+• kex. Wyświetla listę obsługiwanych algorytmów wymiany kluczy.
+• kex-gss. Wyświetla listę obsługiwanych algorytmów typu GSSAPI (ang. generic security service application program interface) wymiany kluczy.
+• key. Wyświetla listę typów kluczy.
+• key-cert. Wyświetla listę typów certyfikatów kluczy.
+• key-plain. Wyświetla listę niebędących certyfikatami typów kluczy.
+• key-sig. Wyświetla listę obsługiwanych algorytmów typów i sygnatur kluczy.
+• protocol-version. Wyświetla listę obsługiwanych wersji protokołu SSH. W chwili powstawania książki to tylko wersja 2.
+• sig. Wyświetla listę obsługiwanych algorytmów sygnatur.
+
+
+
+
+sudo nano /etc/ssh/sshd_config <-otwiera plik konfiguracyjny ssh na serwerze
+zmiany do wykonania w powyższym pliku:
+1. Port 22 (domyślny port dla komunikacji SSH) zamienić na losowy np. 9717 (wysoki numer, żeby nie kolidował ze znanymi portami usług) - !!!nie zawsze działa (mieć otwarte osobne połączenie z serwerem)!!!
+2. PermitRootLogin no
+3. PasswordAuthentication no
+4. AuthorizedKeysFile ~/.ssh/known_hosts
+
+ssh-keygen -lv -f ~/.ssh/known_hosts <-pokazuje randomart kluczy ssh dla znanych hostów (zmienić parametr "VisualHostKey" na "yes" w pliku /etc/ssh/ssh_config żeby pokazywał się randomart przy logowaniu do serwera)
+
+ssh-keygen -lf /etc/ssh/ssh_host_rsa_key <-komenda wydana na serwerze pobierze fingerprint klucza serwera (hosta) aby móc zweryfikować klienta
+
+~/.ssh_config. <-pozwala on na skonfigurowanie loginów do wielu zdalnych hostów, poniżej jego składnia:
+
+Host server2
+  HostName server_przykładowy
+  User nazwa_użytkownika
+    IdentityFile ~/.ssh/id-server_przykladowy
+    IdentitiesOnly yes
+
+Teraz wystarczy komenda: "ssh server_przykładowy", żeby się z nim połączyć. IdentyFile to pełna ścieżka dostępu do klucza publicznego.
+
+ssh-keygen -p -f ~/.ssh/id-serwer_przykładowy <-zmiana hasła do klucza prywatnego "serwer_przykładowy". Zapomnianego hasła nie można odzyskać - potrzebne będzie utworzenie nowego klucza z nowym hasłem.
+
+KEYCHAIN (pęk kluczy)
+keychain ~/.ssh/id-server1 ~/.ssh/id-server2 ~/.ssh/id-server3 . ~/.keychain/$HOSTNAME-sh <-dodać tę linię do pliku ".bashrc". Pęk kluczy będzie przechowywał klucz prywatny aż do zamknięcia systemu, więc hasło trzeba podawać po każdym uruchomieniu systemu. "$HOSTNAME" nakazuje pękowi kluczy przeszukanie zmiennych środowiskowych użytkownika w celu pobrania nazwy hosta. Pęk kluczy jest menedżerem przeznaczonym zarówno dla ssh-agent, jak i gpg-agent, a jego zadaniem jest buforowanie haseł SSH i GPG przez cały czas działania systemu.
+
+
+Używanie pęku kluczy w celu udostępniania haseł mechanizmowi cron
+Skrypt wykonujący kopię zapasową (pamiętać o uprawnieniu wykonywalności):
+#!/bin/bash
+source $HOME/.keychain/${HOSTNAME}-sh
+/usr/bin/rsync -ae "ssh -i /home/nazwa_użytkownika/.ssh/id-serwer_przykładowy" /home/nazwa_użytkownika/ nazwa_użytkownika@serwer_przykładowy:/backups/
+
+Wiersz, który trzeba dodać do pliku crontab. To zadanie spowoduje wykonywanie skryptu duchess-backup-server1 codziennie o godzinie 22.15:
+15 22 * * * /home/duchess/duchess-backup-server1
+
+sshfs nazwa_użytkownika@serwer_przykładowy: lokalny_katalog_dla_zdalnego_systemu_plików/ <-podmontowanie zdalnego systemu plików na lokalnej maszynie (można montować pojedyncze podkatalogi, nie można używać tyldy "~")
+fusermount -u lokalny_katalog_dla_zdalnego_systemu_plików <-odmontowanie zdalnego systemu plików
+Opcja "-o reconnect" nakazuje narzędziu sshfs automatyczne ponowne nawiązywanie połączenia po jego zerwaniu.
+
+
+
+
+
+
+
+
+
+KONTA UŻYTKOWNIKÓW
+id <-zbadanie własnej tożsamości, pokazuje uid i numery grup do których należę jako użytkownik
+groups <-pokazuje do jakich grup należymy
+getent group docker <-pokazuje wszystkich członków grupy "docker"
+
+/etc/passwd <-plik zawierający konta użytkowników
+/etc/group  <-plik zawierający grupy
+/etc/shadow <-plik zawierający hasło użytkownika oraz login, uid,gid, katalog domowy,powłoka logowania
+
+passwd - zmiana hasła
+sudo passwd -l neo <-zablokowanie konta użytkownika neo (brak dostępu i możliwości zalogowania)
+sudo passwd -u neo <-odblokowanie konta użytkownika neo
+
+authconfig --passalgo=sha512 --update <-konfiguracja haseł systemowych aby korzystały z algorytmu mieszania sha512
+
+sudo chage -l neo <-pokazuje info kiedy wygaśnie konto (możliwość logowania) użytkownika neo
+sudo chage -E 2021-10-21 neo <-polecenie ustawia wygaśnięcie hasła dla użytkownika neo na 21 października 2021 r. (chage - nie change!)
+sudo chage -M 30 neo <-hasło użytkownika neo wygaśnie po 30 dniach
+sudo chage -M -1 neo <-anulowanie wygaśnięcia hasła dla użytkownika neo
+
+su - nazwa_użytkownika <-przelogowuje na "nazwa_użytkownika"
+sudo adduser nazwa_użytkownika <-dodaje nowego użytkownika o nazwie "nazwa_użytkownika"
+sudo usermod -a -G sudo nazwa_użytkownika <- dodaje użytkownika o nazwie "nazwa_użytkownika" do grupy "sudo"
+sudo usermod -u 1984 nazwa_użytkownika <- zmiana userID użytkownika "nazwa_użytkownika" na "1984"
+sudo userdel nazwa_użytkownika <-kasuje użytkownika
+
+wall "Treść wiadomości" <-wyświetla wiadomość wszystkim zalogowanym użytkownikom 
+wall $(curl wttr.in?format=3) <-wyświetla jako wiadomość polecenie z nawiasu (tu wyświetli lokalną pogodę)
+
+
+
+DZIAŁANIA NA PLIKACH I KATALOGACH
+pwd - bieżący katalog (gdzie jestem - print working directory)
+whereis -b -s -m nazwa_pliku_lub_katalogu lokalizuje binaria (-b) źródła (-s) i dokumentację (-m) plików lub katalogów
+
+ls - listowanie zawartośći bieżącego katalogu (parametry: -l pokazuje szczegóły plików w bieżącym katalogu, -a pokazuje również ukryte pliki, -R pokazuje dodatkowo zawartość podkatalogów)
+ls -l -a -R pokaże pełną zawartość katalogu wraz ze szczegółami i ukrytymi plikami
+ls -i pokazuje numery węzłów inode
+
+stat <-mocniejsza wersja "ls"
+
+mkdir oraz rmdir tworzenie oraz kasowanie katalogu (tylko pusty katalog można usunąć poleceniem rmdir)
+mkdir {2007..2009}-{01..12} <-utworzy listę 12 katalogów dla lat od 2007 do 2009 zaczynającą się od katalogu 2007-01 a kończącą się na 2009-12
+
+cp kopiuje plik, mv przenosi plik, rm kasuje plik Wszystkie 3 polecenia potrzebują określenia pliku i miejsca docelowego
+rm -r usuwa niepuste katalogi
+
+cp -a <-kopiuje pliki i katalogi ze wszystkimi atrybutami, łącznie z przynależnością i uprawnieniami. Bez "-a" kopie przyjmą domyślne atrybuty użytkownika wykonującego kopię. (--archive)
+cp -i <-zapyta o potwierdzenie nadpisania istniejącego pliku. Bez "-i" nadpisze plik bez pytania i bez ostrzeżenia. (--interactive)
+cp -r <-rekurencyjnie kopiuje katalogi i ich zawartość (niezbędna podczas kopiowania katalogów) (--recursive)
+cp -u <-kopiuje tylko te pliki, które nie istnieją w katalogu docelowym lub są nowsze niż te w katalogu docelowym. Pomija pliki, których nie trzeba kopiować. (--update)
+cp -v <-wyświetla komunikaty informacyjne podczas wykonywania kopiowania (--verbose)
+
+ln tworzy dowiązania do plików (miękkie, tzw. symboliczne - odpowiednik skrótu w Windows lub twarde, wskazujące na konkretny fizyczny obszar na dysku)
+ln -s tworzy dowiązanie symboliczne
+
+touch tworzy nowy plik lub zmienia czas modyfikacji istniejącego
+cat - tworzenie plików poprzez przekierowanie standardowego wejścia do pliku i wyświetlenie na standardowym wyjściu, pozwala także na wyświetlenie zawartośći istniejącego pliku oraz na scalanie (łączenie) kilku plików (np dodanie ich do siebie tworząc obraz ISO)
+
+du -sh nazwa_katalogu-lub-pliku <- sprawdzenie ile zajmuje katalog lub plik
+
+head nazwa_pliku <-pokazuje 10 pierwszych wierszy pliku lub strumienia (head -5 plik <-pokaże 5 wierszy pliku, head +5 plik <-pokaże 10 wierszy zaczynając od 5 wiersza)
+tail nazwa_pliku <- pokazuje 10 ostatnich wierszy pliku lub strumienia (opcje +/- jak przy head powyżej)
+
+cat > nowy.txt 
+Ciekawy tekst 
+nacisnąć CTRL+D       
+Powyższa kombinacja utworzy nowy.txt zawierający "Ciekawy tekst"
+
+cat -n nowy.txt wyświetli zawartość pliku wraz z numeracją linii
+cat plik1 plik2 plik3 > pliki.iso Łączenie plików (scalenie) w jedną całość
+less - pokazuje zawartość pliku z możliwością przewijania (wyjście po naciśnięciu klawisza "q"). Dobre połączenie: cat -n nazwa_pliku.txt | less
+wc nazwa_pliku_jako_parametr - pokazuje liczbę linii, słów oraz bitów w danym pliku
+ls | wc -l wyświetli liczbę łączną plików i katalogów w danym katalogu
+ls | grep raport | xargs -i cp {} Dokumenty/    Wszystkie pliki, zawierające w nazwie ciąg znaków "raport", zostaną przekopiowane do katalogu "Dokumenty".
+
+chown nowy_użytkownik:nowa_grupa pliki - zmiana właściciela pliku (dwukropek rozdziela użytkownika_właściciela od grupy_właścicielskiej - można zmienić oba na raz lub tylko jeden z tych pozostawiając drugi wolny, np.: chown root: pliczek.txt albo chown :userzy pliczek.txt
+
+chmod prawa_dostępu nazwa_pliku - zmienia prawa dostępu do pliku
+W składni polecenia należy podać: klasę użytkownika, operator, rodzaj prawa dostępu.
+Klasa użytkownika: u (user), g (group), o (others), a (all)
+Operator: + przyznaje prawo, - odbiera prawo, = przypisuje prawo
+Rodzaj prawa dostępu: r (read), w (write), x (execute)
+Przykład:
+chmod u+rwx,g+rwx,o+x pliczek.txt
+Użytkownik i grupa otrzymają pełnię praw dostępu, natomiast reszta jedynie prawo do wykonania pliku pliczek.txt
+chmod u+x skrypt.sh
+Użytkownik otrzyma prawo do wykonania pliku skrytp.sh
+chmod go-r raport.odt
+Grupa i pozostali użytkownicy stracą prawo do odczytu pliku raport.odt
+
+sudo chown właściciel:grupa plik <-zmiana właściciela i grupy pliku lub katalogu
+sudo chown bob:users przyklad.txt <-plik "przyklad.txt" zmieni właściciela na użytkownika "bob" i zmieni grupę pliku na grupę "users"
+sudo chown bob: przyklad.txt <-plik "przyklad.txt" zmieni właściciela na użytkownika "bob" i zmieni grupę pliku na grupę logowania użytkownika "bob"
+sudo chown :users przyklad.txt <-plik "przyklad.txt" zmieni grupę pliku na grupę "users", właściciel pliku się nie zmieni
+
+umask <-steruje domyślnymi uprawnieniami nadawanymi plikom podczas ich tworzenia (domyślnie w Ubuntu jest 0002, czyli dodanie zapisu dla pozostałych użytkowników)
+umask 0000 <-wyłącza maskę
+
+Numeryczne prawa dostępu
+--- 0 000
+--x	1 001
+-w-	2 010
+-wx	3 011
+r--	4 100
+r-x	5 101
+rw-	6 110
+rwx	7 111
+Powyżej: Tryb pliku Reprezentacja ósemkowa Reprezentacja binarna
+
+Zapis: chmod u=rwx,g=rwx,o=x pliczek.txt 
+jest równoważny z: chmod 771 trurl.py
+
+Uprawnienia specjalne (reprezentacja ósemkowa)
+4000 bit atrybutu setuid, jego zastosowanie dla pliku wykonywalnego skutkuje zmianą identyfikatora euid (effective user ID) z identyfikatora rzeczywistego użytkownika (który uruchamia program) na identyfikator właściciela programu
+2000 bit setgid, zmienia identyfikator egid (effective group ID) z identyfikatora rzeczywistej grupy użytkownika na identyfikator grupy pliku. Jeśli katalog ma ustawiony bit setgid to właścicielem nowo utworzonych w tym katalogu plików będzie grupa, do której należy katalog, a nie grupa osoby tworzącej plik. Przydatne w przypadku katalogów współdzielonych. 
+1000 bit zaczepienia (sticky). Linux ignoruje ten bit w przypadku plików, jednak ustawienie go dla katalogu zapobiega usuwaniu lub zmianie nazwy plików przez użytkowników, z wyjątkiem właściciel katalogu, właściciela pliku lub roota. Bit zwykle wykorzystywany do sterowania dostępem do współdzielonych katalogów (np. tmp)
+
+chmod u+s program <-przydzielenie atrybutu setid do "program"
+chmod g+s katalog <-nadanie "katalogowi" atrybutu "setgid"
+chmod +t katalog <-ustawienie bitu zaczepienia dla "katalog"
+
+Bezpieczne uprawnienia:
+0600 dla plików
+0700 dla katalogów
+
+
+
+SYNCHRONIZACJA PLIKÓW I KATALOGÓW (BACKUP)
+rsync opcje źródło cel
+
+rsync -ravh /home/zdjecia /media/sd1/zdjecia <-opcja "r" włącza rekursję, opcja "a" (archiwizacja) zachowuje atrybuty plików (daty utworzenia i modyfikacji plików zostaną oryginalne), opcja "v" (verbose) daje rozszerzone info na wyjściu, opcja "h" (human readable) wyświetla sformatowane wyniki dla łatwiejszego czytania. Polecenie zsychronizuje zawartość podkatalogu na partycji "home" z podkatalogiem na dysku "sd1". Polecenie bez opcji "-av" skopiuje i osadzi cały katalog "zdjęcia" do celu.
+
+sudo rsync -av --delete /media/veracrypt8/Zdjęcia /media/Zdjęcia/ <-opcja "delete" skasuje pliki w celu, których nie ma w źródle
+
+rsync --dry-run źródło cel <-demo działania komendy rsync. Odpalić za każdym razem!
+
+rsync -rva --remove-source-files źródło cel <-przetransferuje katalogi ze źródła do celu, usuwając zawartość u źródła (zostanie pusty katalog w źródle)
+
+Opcja "z" spakuje pliki - przydatne przy wolnym połączeniu.
+Opcja "exclude" wyklucza z synchronizacji określone pliki lub foldery.
+Opcja "include" – włącza do synchronizacji określone przez nas pliki z listy plików pomijanych opcją "exclude".
+Opcja "--progress --stats" pokaże statystyki synchronizacji podczas kopiowania plików (ile skopiowano bieżącego pliku, procent jego skopiowania i pozostały czas)
+
+sudo rsync -rav --delete /home/nazwa_użytkownika/Dropbox "/media/nazwa_dysku/BACK UP/Dropbox"
+
+sudo rsync -ravh --progress --stats --dry-run --delete "/media/nazwa_dysku/" "/media/nazwa_dysku"
+sudo rsync -ravh --progress --stats --delete "/media/nazwa_dysku/" "/media/nazwa_dysku"
+
+
+
+
+MONTOWANIE OBRAZÓW ISO
+sudo mkdir /mnt/iso
+sudo mount -o loop -t iso9660 /path/to/file.iso /mnt/iso
+sudo unmount /mnt/iso
+
+md5sum -c nazwa_pliku <- sprawdza sumę kontrolną (hash) z podanego pliku (w pliku najpierw hash a obok nazwa pliku)
+
+
+
+SELINUX
+sestatus pokazuje status SElinux
+setenforce 1 tymczasowe włączenie SElinux
+nano /etc/selinux/config edycja pliku konfiguracyjnego SElinux
+getsebool -a pokazuje wartości Boolowskie (prawda czy fałsz) w SElinux
+journalctl -b -0 pokazuje log błędów SElinux
+restorecon -vR scieżka_do_katalogu <- przywróci poprawne etykiety SElinux jeśli jakiś katalog nie działa poprawnie
+parametr -Z pokazuje etykiety SElinux, np.: ls -Z pokaże zawartość katalogu wraz z etykietami SElinux
+
+
+
+
+
+HARDENING 
+sudo lynis audit system
+sudo lynis update info
+
+nmap -sn 192.168.0.0/24 <-przeszukanie lokalnej sieci (znajduje hosty, pokazuje info o portach) 
+
+sudo ss -tupln <-pokazuje otwarte porty
+
+sudo ufw enable
+sudo ufw allow ssh
+sudo nano /etc/ufw/before.rules <-wyedytować ten plik i dodać następującą linię do sekcji #ok icmp codes for INPUT:
+-A ufw-before-input -p icmp --icmp-type echo-request -j DROP
+dzięki tej linii nie będzie już możliwe spingowanie serwera (serwer nie odbije pinga, czyli nie będzie już widoczny)
+
+sudo apt install unattended-upgrades <-instaluje aktualizacje automatyczne
+dpkg-reconfigure --priority=low unattended-upgrades
+
+wget -i https://v.firebog.net/hosts/lists.php?type=tick <-pobiera do bieżącego katalogu pliki txt zawierające listy dla blokerów reklam, spamu, malware, szpiegów, itp.
+
+sudo pro attach <-dołączenie maszyny (systemu) do usługi Ubuntu Pro (po komendzie "attach" podać token usługi Ubuntu One
+
+
+
+WGET
+wget -c nazwa_pliku <-kontynuacja niekompletnego pobrania
+wget -m http://example.com <- pobranie całej strony www
+wget -m --convert-links http://example.com <- pobiera całą stronę ale zmienia linki aby prowadziły do lokalnych zasobów pobranej strony a nie do zasobów www
+wget -m --convert-links --page-requisites http://example.com <- pobiera również arkusze stylów, żeby strona wyglądała poprawnie offline
+wget -m --convert-links --page-requisites --no-parent http://example.com/subexample <- nie pobiera strony nadrzędnej w stosunku do /subexample (czyli nie pobierze example.com)
+
+wget -r ftp://example.com/folder <-pobiera katalog z serwera FTP (--noparent wykluczy katalogi nadrzędne)
+
+wget -i download.txt <- pobiera wszystkie zasoby wymienione w pliku download.txt
+
+dodatkowe opcje polecenia WGET:
+--limit-rate=200k <-ograniczenie przepustowości pobierania do 200 KB/s
+-b <- pobiera w tle
+-t 10 <- spróbuje pobrać 10 razy (np. jeśli jest błąd 404)
+
+
+
+
+
+
+UBUNTU PRO
+ua status --all<-pokazuje status usług Ubuntu, przełącznik "all" pokazuje usługi w wersji beta
+sudo ua enable cis --beta <-włączenie usługi "cis" która jest w fazie "--beta"
+canonical-livepatch status <-czy łatanie kernela bez konieczności restartu jest włączone
+canonical-livepatch status --format yaml <-pokazuje stan łatek kernela (co jest załatane: które CVE )
+canonical-livepatch status --verbose <-pokazuje stan usługi "livepatch" z dokładnymi info o załatanych podatnościach
+canonical-livepatch status --verbose | grep "*" <-listuje same nazwy podatności (CVE)
+canonical-livepatch status --verbose | grep "*" | wc -l <-zlicza ilość załatanych podatności 
+pro security-status <-pokazuje ile pakietów zainstalowano z Ubuntu Main czy z Universe
+
+
+
+
+
+
+RADEON OTWARTE STEROWNIKI
+sudo add-apt-repository ppa:oibaf/graphics-drivers
+sudo apt-get update
+sudo apt upgrade
+reboot
+
+
+
+
+PYTHON
+pip3 list <-lista zainstalowanych pakietów pythona wersji 3 (pip to jest menadżer pakietów pythona)
+
+
+
+
+
+KONWERSJA PLIKÓW WEBP NA PLIKI PNG (program dwebp)
+for file in ./*.webp; do dwebp $file -o ${file%.*}.png; done && rm *.webp
+
+
+
+
+
+

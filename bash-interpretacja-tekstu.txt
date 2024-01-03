@@ -1,0 +1,162 @@
+WIELOZNACZNIKI
+*           Pasuje do dowolnych znaków
+?           Pasuje do dowolnego pojedynczego znaku
+[znaki]     Pasuje do dowolnego znaku wchodzącego w skład "znaki"
+[!znaki]    Pasuje do dowolnego znaku, który nie wchodzi w skład "znaki"
+[[:klasa:]] Pasuje do dowolnego znaku wchodzącego w skład "klasy"
+
+Często używane klasy:
+[[:alnum:]] Pasuje do dowolnego znaku alfanumerycznego
+[[:alpha:]] Pasuje do dowolnego znaku alfabetycznego
+[[:digit:]] Pasuje do dowolnej liczby
+[[:lower:]] Pasuje do dowolnej małej litery
+[[:upper:]] Pasuje do dowolnej dużej litery
+
+
+FILTRY
+sort
+uniq <-usuwa duplikaty
+uniq -d <-pokazuje duplikaty
+wc <-zlicza wiersze, wyrazy i bajty w pliku (word count)
+wc -l <-zlicza same wiersze
+grep -i <-grep ignoruje wielkość liter podczas wyszukiwania
+grep -v <-grep wyświetli wiersze niepasujące do wzorca ("-v" pomija wpisaną frazę w szukaniu)
+
+
+
+
+INTERPRETACJA NAWIASÓW
+Wzorce mające zostać poddane interpretacji nawiasów mogą zawierać część początkową (preambułę) oraz część końcową (dopisek). Wyrażenie znajdujące się w nawiasach może zawierać listę łańcuchów tekstowych oddzielonych przecinkiem lub zakres liczb naturalnych albo pojedynczy znak. Wyrażenia w nawiasach można zagnieżdżać.
+
+echo Front-{A,B,C}-Back <-wyświetli: Front-A-Back Front-B-Back Front-C-Back
+echo Liczba_{1..5} <-wyświetli: Liczba_1 Liczba_2 Liczba_3 Liczba_4 Liczba_5
+
+echo {01..15} <-wyświetli: 01 02 03...15
+echo {001..15} <-wyświetli: 001 002 003...015
+echo {Z..A} <-wyświetli: Z Y W...A
+echo a{A{1,2},B{3,4}}b <-wyświetli: aA1b aA2b aB3b aB4b
+
+mkdir {2007..2009}-{01..12} <-utworzy listę 12 katalogów dla lat od 2007 do 2009 zaczynającą się od katalogu 2007-01 a kończącą się na 2009-12
+
+
+INTERPRETACJA CUDZYSŁOWÓW
+Jeśli umieścimy tekst pomiędzy cudzysłowami podwójnymi, wszystkie znaki specjalne rozpoznawane przez powłokę tracą swoje specjalne znaczenie i są traktowane jak zwykłe znaki. Wyjątkiem są znaki $ (dolara), \ (lewy ukośnik), ` (lewy apostrof). Nie będzie przeprowadzany podział na słowa, interpretacja ścieżek, interpretacja tyldy, interpretacja nawiasów. Natomiast interpretacja parametrów, interpretacja wyrażeń arytmetycznych, podstawianie wyników poleceń będą nadal przeprowadzane.
+
+Podwójne cudzysłowy pozwalają na stosowanie nazw plików zawierających znaki spacji: mv "dwa wyrazy.txt" dwa_wyrazy.txt
+
+Jeżeli chcemy wyłączyć wszystkie mechanizmy interpretacji, korzystamy z pojedynczych cudzysłowów.
+
+Aby zacytować jeden znak poprzedzamy go lewym ukośnikiem (znakiem modyfikacji).
+echo "Saldo użytkownika $USER wynosi: \$5.00" <-wyświetli: Saldo użytkownika me wynosi: $5.00
+Jeżeli chcemy wyświetlić lewy ukośnik, musimy go zinterpretować, wpisując "\\". Wewnątrz pojedynczych cudzysłowów lewy ukośnik traci swoje specjalne znaczenie i jest traktowany jak zwykły znak.
+
+
+WYSZUKIWANIE PLIKÓW
+find ~ | wc -l <-policzy ilość plików i podkatalogów naszego katalogu domowego
+Polecenie "find" pozwala identyfikować (wyszukiwać) pliki, które spełniają określone kryteria. Używa do tego testy, akcje, opcje.
+find ~ -type d | wc -l <- pokaże ilość katalogów w katalogu domowym
+find ~ -type f | wc -l <- pokaże ilość plików w katalogu domowym
+
+find ~ -type f -name "*.JPG" -size +1M | wc -l <-wyszuka w katalogu domowym pliki wszystkie o rozszerzeniu JPG i rozmiarze większym od 1 MB i policzy je (pokazana będzie ilość plików spełniającyh kryteria)
++1M to pliki większe niż 1 MB
+-1M to pliki mniejsze niż 1 MB
+1M to pliki o wielkości dokładnie 1 MB
+
+k kilobajty
+M megabajty
+G gigabajty
+
+Testy programu find:
+-cmin n <-pasuje do plików lub katalogów, których zawartość lub atrybuty zostały zmodyfikowane dokładnie "n" minut temu. "-n" to wcześniej niż, "+n" to poźniej niż n minut.
+-mmin n <-pasuje do plików lub katalogów, których zawartość została zmodyfikowana n minut temu
+
+-cnewer hosanna.txt <-pasuje do plików lub katalogów, których zawartość lub atrybuty zostały zmodyfikowane później niż atrybuty lub treść pliku o nazwie "hosanna.txt"
+-newer plik <-pasuje do plików lub katalogów, których zawartość została zmodyfikowana później niż zawartość określonego pliku (przydatne przy kopiach zapasowych, gdy tworząc ją uaktualniamy plik np. log a następnie używamy find do znalezienia, które pliki zostały zmodyfikowane od ostatniego uaktualnienia
+
+-ctime n <-pasuje do plików lub katalogów, których zawartość lub atrybuty (np. uprawnienia) zostały zmodyfikowane po raz ostatni n*24 godzin temu
+-mtime n <-pasuje do plików lub katalgoów, których zawartość została zmodyfikowana po raz ostatni n*24 godzin temu
+
+-empty <-pasuje do pustych plików lub katalogów
+-perm tryb <-pasuje do plików lub katalogów dla których ustawiono uprawnienia o określonym trybie (wyrażonum cyfrowo lub symbolami)
+-size n <-pasuje do plików o rozmiarze n
+
+-group nazwa <-pasuje do plików lub katalogów należących do grupy "nazwa" (nazwa może być wyrażon jako nazwa grupy lub jako numeryczny identyfikator grupy)
+-user nazwa <-pasuje do plików lub katalogów należących do użytkownika "nazwa" (wyrażona jako nazwa użytkownika lub numeryczny identyfikator użytkownika)
+-nouser <-pasuje do plików lub katalogów należąych do nieważnego użytkownika (znajduje pliki należace do usuniętych kont lub pomaga wykryć aktywność agresora)
+-nogroup <-pasuje do plików lub katalogów należącyh do nieważnej grupy
+
+-iname wzorzec <-podobny do tesu "-name", ale niewrażliwy na wielkość liter
+
+-inum n <-pasuje do plików o numerze "n" i-węzła (przydaje się do odnajdywania wszystkich dowiązań twardych do podanego i-węzła)
+-samefile nazwa <-pasuje do plików, które dzielą ten sam numer i-węzła z plikiem "nazwa"
+
+
+Operatory
+find ~ \(-type f -not -perms 0600\) -or \(-type d -not -perms 0700\) <-wyszuka wszystkie pliki o uprawnieniach innych niż 0600 i wszystkie katalogi o uprawnieniach innych niż 0700 (to są bezpieczne uprawnienia)
+Powyższa konstrukcja: (wyrażenie 1) -or (wyrażenie 2) czyli (plik ze złymi uprawnieniami) -or (katalog ze złymi uprawnieniami)
+Wyrażenie, które testuje pliki ze złymi uprawnieniami: -type f -and -not -perms 0600
+Wyrażenie, które testuje katalogi ze złymi uprawnieniami: -type d -and -not -perms 0700
+Operator "-and" można bezpiecznie pominąć bo jest używany domyśnie
+
+find ~ \(-type f -not -perms 0600 -exec chmod 0600 '{}' ';'\) -or \(-type d -not -perms 0700 -exec chmod 0700 '{}' ';'\) <-sprawdzi uprawnienia i przypisze nowe tam gdzie będzie trzeba
+
+Operatory logiczne polecenia find:
+-and <-sprawdza czy test po obu stronach operatora są prawdą. Gdy nie użyjemy żadnego operatora to domyślnie zostanie użyty "-and" (można go skrócić do "-a")
+-or <-sprawdza czy testy po jednej ze stron operatora są prawdą (można skrócić do "-o")
+-not <-sprawdza czy test za operatorem jest fałszem (można skrócić do wykrzyknika "!")
+() <-grupuje testy i operatory w celu utworzenia większych wyrażeń. Służy do kontroli wyznaczania pierwszeństwa operacji logicznych. Domyślnie find wyznacza wartości od lewej do prawej. Znaki nawiasów mają specjalne znaczenie dla powłoki i dlatego trzeba je cytować używając "\", aby zapobiec ich interpretacji przez powłokę
+
+"wyrażenie 1" -operator "wyrażenie 2"
+Jeśli mamy dwa wyrażenia rozdzielone operatorem logicznym, to we wszystkich przypadkach "wyrażenie 1" będzie wykonywane zawsze, a to czy "wyrażenie 2" będzie wykonywane determinuje operator.
+Dla operatora "-and" prawdziwy wynik "wyrażenia 1" oznacza że "wyrażenie 2" zostanie wykonane", a jeśli wynik "wyrażenie 1" będzie fałszywy, to "wyrażenie 2" nie zostanie wykonane.
+Dla operatora "-or" prawdziwy wynik "wyrażenia 1" oznaczna, że "wyrażenie 2" nie zostanie wykonane", a jeśli wynik "wyrażenia 1" będzie fałszywy, to "wyrażenie 2" zostanie wykonane.
+
+Wynik wyrażenia 1 | operator | Wyrażenie 2 będzie...
+Prawda            |    and   | zawsze jest wykonywane
+Fałsz             |    and   | nigdy nie jest wykonywane
+
+Prawda            |     or   | nigdy nie jest wykonywane
+Fałsz             |     or   | zawsze jest wykonywane
+
+
+Predefiniowane akcje programu find:
+-delete <-usuwa plik pasujący do bieżących kryteriów wyszukiwania (potwierdzić prawidłowość składni zastępując "-delete" akcją "-print" żeby zobaczyć pliki do usunięcia) np.: find ~ -type f -name '*.bak' -delete
+-ls <-wykonuje odpowiednik polecenia "ls -dils" na pliku pasującym do kryteriów wyszukiwania (wynik na standardowe wyjście)
+-print <-wyświetla pełną ścieżkę pasującego pliku na standardowe wyjście (domyślna akcja, jeśli żadna inna akcja nie została określona, a więc "find ~" to wykonanie akcji "-print" czyli komenda "find ~ -print")
+-quit <-wyjście po dokonaniu dopasowania
+
+Kolejność używania testów i akcji w poleceniu ma znaczenia - są interpretowane od lewej do prawej, a więc logiczna relacji między nimi determinuje, które z nich zostaną wykonane. Domyślnie między akcjami jest użyty operator logiczny "-and".
+
+Akcje zdefiniowane przez użytkownika:
+-exec polecenie {}; <-akcja "exec" wywołuje "polecenie", "{}" to symboliczna reprezentacja nazwy bieżącej ścieżki, a średnik ";" jest wymaanym separatorem , sygnalizującym koniec polecenia
+
+-exec rm '{}' ';' <-wykonuje zadanie równoznaczne z opisaną wcześniej akcją "-delete"
+-ok <-użytkownik zostanie poproszony o potwierdzenie np.: find ~ -type f -name 'foo*' -ok ls -l '{}' ';' <-gdy znajdzie plik zaczynający się od "foo" to zapyta o zgodę na wykonanie "ls -l" na nimi
+
+Optymalizacja wydajności podczas szukania:
+ls -l plik1
+ls -l plik 2
+Dwa powyższe polecenia spowodują dwukrotne uruchomienie komed "ls -l", a można ją wywołać jednorazowo: "ls -l plik1 plik2"
+
+find ~ -type f -name 'foo*' -exec ls -l '{}' ';' <-uruchomi "ls -l" dla każdego znalezionego pliku zaczynającego się od "foo"
+find ~ -type f -name 'foo*' -exec ls -l '{}' + <-da te same wyniki co komenda wyżej, ale uruchomi "ls -l" tylko raz (separator ';' został zamieniony na plus "+")
+find ~ -type f -name 'foo*' -print | xargs ls -l <-wynik działania polecenia "find" został przekazany potokiem do polecenia "xargs", które tworzy listę argumentów dla polecenia "ls", a następnie je wykonuje
+
+xargs --show-limits <-pokazuje maksymalny rozmiar polecenia (liczba argumentów, które można użyć w wierszu polecenia nie jest nieograniczona - jeśli liczba argumentów jest za duża dla systemu, to xargs wykona określone polecenie z maksymalną liczbą argumentów, a następnie powtórzy proces aż do opróżnienia standardowego wejścia)
+
+Nazwy plików zawierające spację:
+find ~ -iname '*.jpg' -print0 | xargs --null ls -l <-polecenie "find" przyjmuje opcję "-print0", która tworzy wynik z separatorami w postaci znaków null (w ASCII jest to znak zero, bo spacja w ASCII to znak 32) a polecenie "xargs" przyjmuje opcje "--null", która akceptuje dane wejściowe rozdzielone znakami null
+
+Opcje polecenia find:
+-depth <-sprawia, że polecenie find będzie najpierw procesować pliki, a dopiero później sam katalog (stosowana automatycznie z opcją "-delete")
+-maxdepth poziomy <-określa maksymalną liczbę poziomów zagłębienia, na których find będzie przeszukiwał drzewo katalogów podczas wykonywania testów i akcji
+-mindepth poziomy <-ustawia minimalną liczbę poziomów na których find będzie przeszukiwał drzewo katalogów przed wykonaniem testów i akcji
+-mount <-polecenie find będzie ignorować katalogi zamontowane w innych systemach plików
+-noleaf <-polecenie find nie będzie optymalizować wyszukiwania na podstawie przypuszczenia, że przeszukiwany jest uniksowy system plików (opcja niezbędna podczas skanowania systemów plików DOS czy CD-ROM)
+
+
+Polecenie SED służy do zmiany tekstu w plikach tekstowych.
+sed 's/pies/kot/g' <-zamieni (opcja "s" na początku cudzysłowiu to substitute) słowo "pies" na słowo "kot" globalnie (opcja "g" na końcu komendy)
+
+
+

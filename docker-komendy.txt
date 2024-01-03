@@ -1,0 +1,237 @@
+INSTALACJA DOCKERA
+sudo usermod -aG docker nazwa_użytkownika <-dodanie użytkownika "nazwa_użytkownika" do grupy "docker" aby uruchamiać komendy dockera bez sudo
+getent group docker <-pokazuje wszystkich członków grupy "docker"
+sudo chmod 666 /var/run/docker.sock <-gdyby były problemy z uprawnieniami “Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post “http://%2Fvar%2Frun%2Fdocker.sock/v1.24/auth”: dial unix /var/run/docker.sock: connect: permission denied” 
+
+sudo apt install docker-compose
+
+docker info <-informacje o instalacji dockera (m.in. ścieżka do katalogu z obrazami)
+
+INSTALACJA DOCKER SCOUT
+mkdir -p ~/.docker/cli-plugins
+wget https://github.com/docker/scout-cli/releases/download/v0.15.0/docker-scout_0.15.0_linux_amd64.tar.gz
+tar xvzf *.tar.gz
+mv docker-scout ~/.docker/cli-plugins/
+chmod +x ~/.docker/cli-plugins/docker-scout
+
+
+
+
+
+DOCKER HUB
+docker search nazwa <-szukanie "nazwa" w repozytorium obrazów dockera
+docker pull alpine <-pobranie obrazu "alpine" z repozytorium dockera (z Docker Hub)
+
+docker login <-rozpoczyna logowanie do Docker Hub
+dockeer push nazwa_repozytorium/nazwa_obrazu:ewentualnie_wersja <-mając założone konto na Docker Hub można tam wgrywać własne obrazy, ale sa one publiczne (w wersji bezpłatnej), nazwa repo to username
+
+
+
+
+
+OBRAZY
+docker images <-pokazuje dostępne (pobrane) obrazy (lub "docker image ls")
+
+docker history nazwa_obrazu <-pokaże warstwy z których składa się obraz
+
+docker rmi nazwa_obrazu <-usuwa obraz dockera (zamiast nazwa_obrazu lepiej użyć jego identyfikatora)
+docker rmi -f identyfikator_obrazu <-wymusza (opcja "-f") usunięcie obrazu, gdy jest już z niego zrobiony kontener
+
+docker tag stara-nazwa-obrazu nowa-nazwa-obrazu <-zmiana nazwy obrazu
+
+
+
+
+
+KONTENERY
+docker ps <-pokazuje uruchomione kontenery
+docker ps -a <-pokazuje kontenery obecnie uruchomione oraz w przeszłości
+docker container list <-nowsza wersja "docker ps", które ma być zarzucone (opcja "-a" działa tak samo)
+docker inspect nazwa_kontenera <-szczegółowe informacje (dużo) o kontenerze (json)
+
+docker create nazwa_obrazu <-utworzy kontener z obrazu, ale go nie uruchomi
+docker run nazwa_obrazu <-utworzy i uruchomi kolejny (nowy) kontener z obrazu i zamknie go po wykonaniu polecenia jeśli było dane, "run" nie służy do uruchamiania istniejących już kontenerów
+docker start nazwa_kontenera <-uruchomi i pozostawi uruchomiony kontener
+docker stop identyfikator_kontenera <-zatrzymanie uruchomionego kontenera
+
+docker rm identyfikator_kontenera <-usuwa kontener
+docker container rename stara_nazwa nowa_nazwa <-zmiana nazwy isniejącego kontenera
+
+docker system prune <-usuwa zatrzymane kontenery i nieużywane sieci
+
+docker run -it -d nazwa_obrazu <-uruchomi kontener w trybie interaktywnym, z powłokami, jako demona (usługa działająca w tle)
+docker run -it -d --restart unless-stopped alpine <-uruchomi "alpine" jak powyżej plus w trybie ciągłym (będzie wstawał kontener po wyjściu z niego lub zamknięciu w inny sposób, np. z powodu błędu)
+docker run -it -d --restart unless-stopped -p 8080:8080 nginx <- uruchomienie kontenera nginx z przekierowaniem portów, żeby był widoczny na zewnątrz hosta (domyslnie kontener nie ma dostępu do sieci)
+docker run -rm -itd nazwa_obrazu_bazowego <-uruchomi nowy kontener, ale opcje "rm" powodują że po zakończeniu pracy zostanie on usunięty (wszystkie zmiany znikną)
+
+-p 8080:80     <-mapuje port 8080 na hoście Dockera na port TCP 80 kontenera
+-p 8080:80/udp <-mapuje port 8080 na hoście Dockera na port UDP 80 kontenera
+
+-i = interactive (uruchomi standardowy strumień wyjścia, tzn. pokaże na ekranie informację ustawioną w konenerze oraz utrzyma otwarty standardowy strumień wejścia żeby móc wydawać polecenia w CLI kontenera)
+-t = tty (uruchamia powłokę w kontenerze)
+-d = detach
+
+docker run nazwa_obrazu env <-pokaże zmienne środowiskoe (env) z tego obrazu
+docker run -e NAZWA_ZMIENNEJ=argument_zmiennej obraz env <-przekazanie zmiennej do obrazu
+
+docker attach identyfikator_kontenera <-podłączenie się (wejście do) identyfikator_kontenera
+
+docker exec id_kontenera polecenie <-wykonanie polecenia wewnątrz działającego już kontenera (musi być uruchomiony)
+
+docker cp źródło cel <-skopiuje plik, gdzie jako źródło może być nazwa_kontenera:nazwa_pliku lub nazwa_pliku w lokalnym hoście (nazwa_kontenera:/ oznacza katalog główny w kontenerze)
+
+exit <-wyjście z kontenera ALE jego zamknięcie spowoduje utratę zmian wewnątrz kontenera
+CTRL+P a następnie CTRL+Q <- ta kombinacja powoduje odłączenie od kontenera (wyjście z kontenera bez zamykania go - będzie działał i zmiany nie znikną)
+
+
+docker commit identyfikator_kontenera nowa_nazwa_brazu:1.0 <-zapisanie kontenera do nowej wersji obrazu (":1.0" <- ta część nadaje wersję czyli tag). Przydaje się, gdy wprowadzono zmiany w systemie plików i chcemy je zachować.
+
+
+
+
+
+SIECI DOCKERA
+docker network ls <-pokazuje sieci i hosty
+
+docker network rm nazwa_sieci <-usuwa sieć
+docker network prune <-usuwa wszystkie nieużywane sieci
+
+docker inspect --format '{{ .NetworkSettings.IPAddress }}' defa6df58a40 <-pokaże adres IP kontenera "defa6df58a40"
+docker inspect nazwa_sieci <-pokaże szczegóły wskazanej sieci
+
+docker network create siec_testowa <-utworzy "siec_testowa"
+docker network connect nazwa_sieci id_kontenera <-podłączy kontener do "nazwa_sieci"
+docker network disconnect nazwa_sieci id_kontenera <-odłączy kontener od "nazwa_sieci"
+
+docker run -itd --name kontener_probny --network siec_testowa alpine <-uruchomi kontener o nazwie nadanej "kontener_probny" podłączony do sieci "siec_testowa" na bazie obrazu bazowego "alpine"
+
+Rodzaje sieci Docker:
+Bridge - sieć pomostowwa, zapewnia łączność między hostem a kontenerami. Dzięki niej kontenery mogą się komunikować ze sobą oraz z hostem, wykorzystując indywidualnie przypisany do każdego z nich adres IP.
+Host - kontener przypisany do sieci host ma przydzielany adres IP z sieci urządzenia na którym działa (nie ma izolacji). Kontener korzysta z zasobów urządzenia na którym jest uruchomiony.
+None - kontener zostaje całkowicie odizolowany od wszelkich dostępnych sieci. Przydatne do testów malware i gdy kontener zawiera wrażliwe dane (nie do wglądu z zewnątrz). Kontener nie ma możliwośći komunikowania się ani z innymi kontenerami, ani z hostem.
+MACvlan - przypisuje MAC adres do kontenera, kontener jest oddzielnym urządzeniem w sieci hosta, może być skonfigurowany jak sięć na głównym hoście, bo kontenery mogą mieć własne interfejsy, jak i adresy IP.
+IPvlan - sieć zapewnia pełną kontrolę nad adresowaniem IPv4 i IPv6.
+Overlay - sieć używana w Docker Swarm, pozwala kontenerom komunikować się na różnych hostach znajdujących się w tym sammym klastrze.
+
+
+Sieć typu "bridge" łączy kontenery ze sobą oraz umożliwia dostęp do internetu za pośrednictwem hosta. Własna sieć typu "bridge" pozwala na dowolne podpinanie i odłączanie kontenerów, także w trakcie ich pracy, co nie jest możliwe w przypadku domyślnie utworzonej sieci, do której automatycznie są podpinane wszystkie kontenery.
+
+Aby odłączyć kontener od domyślnej sieci trzeba kontener najpierw wyłączyć. W sieci utworzonej domyślnie przez Dockera, kontenery mogą się komunikować tylko z użyciem adresów IP, ale jeśli kontenery są podłączone do siecie utworzonej samodzielnie przez użytkownika to wtedy mogą się komunikować także za pomocą nazw kontenerów.
+
+
+
+
+
+WOLUMENY DOCKERA
+docker volume ls <-pokazuje wolumeny (miejsca zapisu danych przez dockera - mogą być podpinane zewnętrzne nośniki i wiele kontenerów może być podpiętych do jednego nośnika czyli wolumenu)
+
+docker volume create testowy_zasob <-tworzy wolumen lokalny o nazwie "testowy_zasob"
+
+docker volume inspect testowy_zasob <-informacje o wolumenie "testowy_zasob"
+
+docker volume rm testowy_zasob <-usunięcie wolumenu "testowy_zasob"
+
+docker run -itd --name testowy_kontener --mount source=testowy_wolumen,target=/katalog_w_kontenerze alpine <-utworzy kontener o nazwie "testowy_kontener", w kórym zamontuje "testowy_wolumen" i pokaże go jako katalog "katalog_w_kontenerze" a zrobi to na podstawie obrazu "alpine"
+
+docker run --volume testowy_wolumen:/katalog_w_kontenerze alpine <-inny sposób zapisu tego co wyżej (nie użyłem tylko opcji "-itd"). Jeśli nie podamy "testowy_wolumen" to docker sam nazwie wolumen dla zapisu i go utworzy
+
+docker volumes prune <-usunie nieużywane wolumeny
+
+
+
+DOCKER COMPOSE
+Tworzymy plik "docker-compose.yml" w którym jest konfiguracja usług do uruchumienia razem - zamiast używać odrębnych poleceń do każdej usługi osobno. Uwaga na wcięcia - YAML jest wrażliwy na to.
+
+Przykładowy plik docker-compose.yml:
+
+version:3
+services:
+        baza_danych:
+                        image: postgres
+                        container_name: baza_danych
+                        volumes:
+                                - dane_bazy:/var/lib/postgressql/data
+                        environment:
+                                POSTGRES_USER: ja
+                                POSTGRES_DB: moja_baza
+                                POSTGRES_PASSWORD: moje_haslo
+                        networks:
+                                - siec_testowa
+
+        panel_admina:
+                        image: adminer
+                        container_name: panel_admina
+                        networks:
+                                - siec_testowa
+                        ports:
+                                - 8080:8080
+networks:
+        sieć_testowa:
+          external: true
+volumes:
+        dane_bazy:
+***************************koniec pliku docker-compose.yml******************
+
+docker-compose up <-uruchomi usługi, sieci i wolumeny zdefiniowane w pliku "docker-compose.yml", który powininen być w tym katalogu, w którym jest uruchamiane polecenie "up"
+
+Docker compose po wydaniu komendy "up" utworzy nowy projekt dodając do nazw usług, zdefiniowanych w pliku konfiguracyjnym, nazwę katalogu w którym odbywa się budowa (np. 2023_baza_danych_1 i 2023_panel_admina_1). Robi to ponieważ można uruchomić kilka kontenerów z tego pliku i wtedy miałyby kolejno liczone końcówki (2, 3, itd.). Sieć i wolumen nie są tak wersjonowane. W panelu "adminer" posługujemy się naszymi nazwami usług (tymi zdefiniowanymi w pliku "docker-compose" czyli bez nazwy katalogu i bez wersji numerycznej).
+
+docker-compose up -d <-uruchomi kontenery w tle
+
+
+
+
+
+
+BUDOWANIE OBRAZU Z PLIKU DOKERFILE
+docker build -t nowa_nazwa_brazu:1.1 . <-uwaga na kropkę na końcu komendy dzięki której docker zbuduje nowy obraz z pliku "Dockerfile" znajdującego się w bieżącym katalogu (na który wskazuje kropka na końcu komendy)
+
+Obraz buduje się z plików w katalogu kontekstu budowy - to jest katalog który zawiera plik Dokcerfile (on może być gdzieś indziej i podanie ścieżki do Dockerfile poza katalogiem kontektu zadziała przy budowie - trzeba użyć polecenia "--file" i wskazać ścieżkę dostępu do wybranego Dockerfile) i ewentualnie plik do dodania (poleceniem COPY) do kontenera (ten plik musi być w katalogu kontekstu). Obraz może być zbudowany do wskazanego katalogu (innego niż katalog kontekstu budowy).
+
+Jeżeli mamy wiele plików Dockerfile w katalogu kontekstu budowy to można je odróżnić od siebie nazwami konstruowanymi w taki sposób, że najpierw nazwa opisowa, później kropka i człon główny, np. aplikacja.Dockerfile albo serwer_flask.Dockerfile. "Dockerfile" zawsze pisane wielką literą. Odwrotna konwencja nazywania plików też jest dopuszczalna (Dockerfile.aplikacja).
+
+Docker jest zbudowany w architekturze klient-serwer co oznacza że w tle działa deamon, który odpala kontenery a my wydajemy mu polecenia używając klienta, który komunikuje się przez API RESTowe po HTTP. Nie używać polecenia budowy obrazu w katalogu z innymi (niepotrzebnymi) plikami, bo one wszystkie zostaną wysłane do demona i dodane do kontenera.
+
+Dockerfile obsługuje komentarze (zaczynają się od "#").
+
+
+
+DOCKERFILE główne elementy pliku
+
+FROM nazwa_obrazu_bazowego:wersja <-zaciągnięcie bazy z której budujemy obraz np. Alpine Linux lub obraz Pythona na Ubuntu.
+COPY nazwa_pliku-w_katalogu_kontekstu katalog_w_kontenerze <-kopiowanie pliku z lokalnego hosta do kontenera (do katalogu z tzw. kontekstem czyli tego z plikiem Dockerfile z którego będzie obraz)
+ADD url . <-zaciągnie plik z url-a i dodaje do kontenera
+WORKDIR nazwa_katalogu <-ustawi katalog roboczy dla kolejnych komend
+RUN <-uruchomi komendę powłoki wewnątrz kontenera podczas jego budowania
+CMD polecenie1 polecenie2 <-może wystąpić tylko 1 raz w pliku dokerfile i musi być ostatnią komendą (te polecenia zostaną wykonane gdy Docker uruchomi kontener, ale nie podczas jego budowania)
+ENTRYPOINT ["polecenie" "argument_1_polecenia" "argument_2_polecenia"] <-działa podobnie jak polecenie CMD ale uruchamiając kontener (docker run) można podać dodatkowy argument, który nie nadpisze tych już obecnych
+
+Jeżeli polecenia COPY i ENTRYPOINT zostaną użyte razem to argument z CMD będzie argumentem dla ENTRYPOINT (oba polecenia muszą być z użyciem nawiasów [] ).
+
+Uruchamiając kontener (docker run) z jakimś poleceniem w lini komend nadpisujemy nim polecenie CMD z Dockerfile albo przekazujemy je jako argument dla ENTRYPOINT. Samo polecenie ENTRYPOINT też da się nadpisać, ale trzeba użyć dodatkowej komendy.
+
+Dla każdej komendy (COPY, RUN) w pliku Dockerfile jest tworzona kolejna warstwa obrazu - ma to znaczenie przy późniejszej optymalizacji.
+Podobne do polecenia COPY jest ADD, które potrafi więcej bo może też pobrać plik z internetu, albo rozpakować archiwum (tar) do kontenera.
+Jeśli polecenie COPY kopiuje plik do katalogu, który nie istnieje, to zostanie on automatycznie utworzony. Pamiętać o sleshu na końcu nazwy katalogu bo bez tego to będzie nazwa pliku na którą zostanie zmieniony plik źródłowy (np. COPY notatki.txt /moj_katalog/ <-to polecenie skopiuje plik "notatki.txt" do katalogu "moj_katalog"). COPY może skopiować cały katalog (zjego zawartością) z katalogu biuld contextu do katalogu w kontenerze.
+
+
+
+Przykładowy Dockerfile:
+
+FROM ubuntu
+
+COPY notatki.txt .
+
+RUN apt update
+RUN apt upgrade
+RUN apt install --yes vim
+
+
+
+
+
+
+DOCKER SCOUT
+docker scout cves identyfikator_obrazu <-sprawdzenie bezpieczeństwa obrazu
+
+docker scout recommendations identyfikator_kontenera  > docker_scout_recommendation.txt <-zapisanie do pliku tekstowego rekomendacji bezpieczeństwa dot. obrazu
