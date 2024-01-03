@@ -7,7 +7,7 @@ git branch <-pokaże gałąź na której obecnie się znajdujemy
 
 git config --list <-pokazuje listę zapisanych zmian konfiguracujnych (ustawień) GITa
 git config --global nazwa.zmiennej wartość.zmiennej <-ustawia wartość dla zmiennej
-git config --global user.mal x@wp.pl <-w tym przykładzie ustawia mejla "x@wp.pl" dla użytkownika GITa
+git config --global user.email x@wp.pl <-w tym przykładzie ustawia mejla "x@wp.pl" dla użytkownika GITa
 
 
 
