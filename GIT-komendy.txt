@@ -1,5 +1,5 @@
 KONFIGURACJA
-git init --separate-git-dir=/home/lazarus77/Dokumenty/GIT <-zainicjowanie pustego repozytorium Gita w określonym katalogu
+git init --separate-git-dir=/home/user/Dokumenty/GIT <-zainicjowanie pustego repozytorium Gita w określonym katalogu
 
 git status <-będąc w katalogu z ustawionym repo GITa (zawierającym katalog ".git") pokaże status repozytorium od czasu ostatniego commita: jakie pliki dodaliśmy, jakie zmiany
 
@@ -44,14 +44,14 @@ git merge master <-łączy bieżącą gałąź z gałęzią master (dodaje commi
 
 ZDALNE REPOZYTORIA (np. GITHUB)
 eval "$(ssh-agent -s)" <-uruchomi agenta ssh w tle
-ssh-add ~/Dropbox/IT/KLUCZE/git/git-klucz <-dodaje prywatny klucz do agenta ssh
+ssh-add ~/katalog/git-klucz <-dodaje prywatny klucz do agenta ssh
 
-git remote add origin git@github.com:adam77c/cli.git <-dodaje zdalne repo
+git remote add origin git@github.com:adam77c/Public_repo.git <-dodaje zdalne repo
 git push -u origin main <-wypycha lokalne zmiany do zewnętrznego repo
 
 git remote -v <-pokazuje zdalne repo, które zostało ustawione
 git remote set-url origin git@github.com:OWNER/REPOSITORY.git <-zmienia URL zdalnego repo z HTTPS na SSH
-git remote set-url origin git@github.com:adam77c/cli.git <-przykład zmiany URL
+git remote set-url origin git@github.com:adam77c/Public_repo.git <-przykład zmiany URL
 
 git fetch <-pobiera nowe gałęzie ze zdalnego repo
 

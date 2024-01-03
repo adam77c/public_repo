@@ -1,5 +1,5 @@
 INSTALACJA DOCKERA
-sudo usermod -aG docker lazarus77 <-dodanie użytkownika "lazarus77" do grupy "docker" aby uruchamiać komendy dockera bez sudo
+sudo usermod -aG docker nazwa_użytkownika <-dodanie użytkownika "nazwa_użytkownika" do grupy "docker" aby uruchamiać komendy dockera bez sudo
 getent group docker <-pokazuje wszystkich członków grupy "docker"
 sudo chmod 666 /var/run/docker.sock <-gdyby były problemy z uprawnieniami “Got permission denied while trying to connect to the Docker daemon socket at unix:///var/run/docker.sock: Post “http://%2Fvar%2Frun%2Fdocker.sock/v1.24/auth”: dial unix /var/run/docker.sock: connect: permission denied” 
 

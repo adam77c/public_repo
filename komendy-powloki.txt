@@ -61,7 +61,7 @@ watch df -hTx tmpfs <-monitoruje zmiany (nie wraca do promptu) w systemie plikó
 watch <-wiloktrotne wywołanie komendy (np. "watch ls" będzie wywoływać komendę "ls" np. gdy czekamy na pobranie się pliku i jego pojawienie w katalogu)
 
 du <-miejsce zajmowane przez plik (podać jego nazwę jako parametr)
-du -h --max-depth 1 /home/lazarus77 <-pokazuje miejsce zajmowane przez katalogi w domowym folderze na głębokość 1 katalogu
+du -h --max-depth 1 /home/nazwa_użytkownika <-pokazuje miejsce zajmowane przez katalogi w domowym folderze na głębokość 1 katalogu
 
 top <-wyświetla uruchomione procesy w czasie rzeczywistym (spacja odświeża, wyjście: q)
 htop <-bardziej rozbudowane i graficzne polecenie top (zazwyczaj wymaga doinstalowania)
@@ -647,10 +647,10 @@ Opcja "exclude" wyklucza z synchronizacji określone pliki lub foldery.
 Opcja "include" – włącza do synchronizacji określone przez nas pliki z listy plików pomijanych opcją "exclude".
 Opcja "--progress --stats" pokaże statystyki synchronizacji podczas kopiowania plików (ile skopiowano bieżącego pliku, procent jego skopiowania i pozostały czas)
 
-sudo rsync -rav --delete /home/lazarus77/Dropbox "/media/veracrypt8/BACK UP/Dropbox"
+sudo rsync -rav --delete /home/nazwa_użytkownika/Dropbox "/media/nazwa_dysku/BACK UP/Dropbox"
 
-sudo rsync -ravh --progress --stats --dry-run --delete "/media/veracrypt8/" "/media/veracrypt10"
-sudo rsync -ravh --progress --stats --delete "/media/veracrypt8/" "/media/veracrypt10"
+sudo rsync -ravh --progress --stats --dry-run --delete "/media/nazwa_dysku/" "/media/nazwa_dysku"
+sudo rsync -ravh --progress --stats --delete "/media/nazwa_dysku/" "/media/nazwa_dysku"
 
 
 
