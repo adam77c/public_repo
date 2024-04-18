@@ -1,3 +1,24 @@
+Secure 2024
+16 - 17 kwietnia 2024
+https://secure.edu.pl/
+
+
+
+
+Splunk Observability - jak rozwiązywać problemy współczesnego monitoringu
+11 kwietnia 2024
+https://www.meetup.com/pl-PL/warszawa-cybersecurity-meetup-group/events/299866432/
+
+
+
+
+Bezpieczeństwo aplikacji Cloud-Native
+09.04.2024
+https://webinar.omnilogy.pl/
+
+
+
+
 SysOps/DevOps Warszawa MeetUp #63
 28 marca 2024
 https://www.meetup.com/pl-PL/sysopswarszawa/events/299502835/
