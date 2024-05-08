@@ -2,6 +2,13 @@
 
 
 
+
+Rozpakowujemy NIS 2 Krok po kroku: Wymagania, Mity, Przewodnik Wdrożeniowy
+8 maja 2024
+https://attendee.gotowebinar.com/additionalInfo.tmpl?duplicate=false&webinar=6780189468855538773&aregistrantConfirmation=2284691043320693848
+
+
+
 DDD & EventStorming na luzie - unconference na 2 lata gildii w Allegro
 26 kwietnia 2024
 https://www.meetup.com/pl-PL/allegrotech/events/300288303/
