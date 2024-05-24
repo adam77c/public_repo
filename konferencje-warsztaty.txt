@@ -2,6 +2,12 @@
 
 
 
+eBPF & Observability Focused TechSpot
+24 maja 2024
+https://www.meetup.com/pl-PL/techspot/events/301016403/?response=3&action=rsvp
+
+
+
 Akademia ISSA: Cybeer -  Maskowanie danych wrażliwych – studium przypadku. Twilight Cyber
 23 maja 2024
 https://docs.google.com/forms/d/e/1FAIpQLScLA91hSwHuXJbMvw8iLvKgtg1deNiWAeykDyYz9waEKkKeCA/viewform?fbzx=8607792222702010790
