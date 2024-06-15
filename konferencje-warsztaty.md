@@ -3,11 +3,11 @@
 
 
 
-### SysOps/DevOps Warszawa MeetUp #66
+[SysOps/DevOps Warszawa MeetUp #66] (https://www.meetup.com/pl-PL/sysopswarszawa/events/300921603/)
 
-13 cze 2024
+13 czerwca 2024
+<br>
 
-https://www.meetup.com/pl-PL/sysopswarszawa/events/300921603/
 
 
 
