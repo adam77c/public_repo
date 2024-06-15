@@ -1,7 +1,5 @@
 SysOps/DevOps Warszawa MeetUp #66  
-
 13 czerwca 2024  
-
 https://www.meetup.com/pl-PL/sysopswarszawa/events/300921603/  
 <br>
 <br>
@@ -121,7 +119,7 @@ https://www.meetup.com/pl-PL/warszawa-cybersecurity-meetup-group/events/29986643
 <br>
 
 Bezpieczeństwo aplikacji Cloud-Native  
-09.04.2024  
+9 kwietnia 2024  
 https://webinar.omnilogy.pl/  
 <br>
 <br>
@@ -145,8 +143,8 @@ https://alterdata.io/biznes-oparty-o-dane-inspiracje-tv-qr/
 <br>
 
 Sherlock Holmes XXI wieku – poznaj SQL i rozwiąż kryminalną zagadkę  
-2024-03-17   
-https://stacja.it/produkt/bezplatnie-sherlock-holmes-xxi-wieku-poznaj-sql-i-rozwiaz-kryminalna-zagadke/  
+17 marca 2024   
+Opis: https://stacja.it/produkt/bezplatnie-sherlock-holmes-xxi-wieku-poznaj-sql-i-rozwiaz-kryminalna-zagadke/  
 Nagranie: https://vimeo.com/924331757/b763196002?share=copy  
 Prezentacja: https://docs.google.com/presentation/d/1IpdCbW5BxBF0__RJCjaT4WkObUfGwuCLZj9hhBgy3Rw/edit#slide=id.g2c38009e7c2_0_82  
 <br>
@@ -165,7 +163,7 @@ https://wkontenerach.pl/kubedevsec-festiwal/
 <br>
 
 Szybki start w MongoDB  
-2024-02-25   
+25 lutego 2024   
 https://stacja.it/produkt/bezplatnie-szybki-start-w-mongodb/  
 <br>
 <br>
@@ -195,7 +193,7 @@ https://blog.szurek.tv/post/od-0-do-pentestera-kohorta/
 <br>
 
 Analiza danych z wykorzystaniem narzędzi GNU/Linux  
-2024-01-16   
+16 sytcznia 2024   
 https://stacja.it/produkt/bezplatnie-analiza-danych-z-wykorzystaniem-narzedzi-gnu-linux/  
 <br>
 <br>
