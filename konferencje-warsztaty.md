@@ -3,8 +3,10 @@
 
 
 
-SysOps/DevOps Warszawa MeetUp #66
+### SysOps/DevOps Warszawa MeetUp #66
+
 13 cze 2024
+
 https://www.meetup.com/pl-PL/sysopswarszawa/events/300921603/
 
 
@@ -222,7 +224,7 @@ https://stacja.it/produkt/bezplatnie-analiza-danych-z-wykorzystaniem-narzedzi-gn
 
 
 
-2023
+# 2023
 
 
 Allegro Tech Talks #39 - Big Data: o podejściu do pracy z danymi
