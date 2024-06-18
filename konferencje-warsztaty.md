@@ -1,3 +1,15 @@
+Incydent i co dalej? (#22 ISSA Warszawa)  
+18 czerwca 2024  
+https://local.issa.org.pl/event/incydent-i-co-dalej/  
+<br>
+<br>
+
+Computerworld Best in Cloud 2024  
+18 czerwca 2024  
+https://www.computerworld.pl/konferencja/bestincloud  
+<br>
+<br>
+
 SysOps/DevOps Warszawa MeetUp #66  
 13 czerwca 2024  
 https://www.meetup.com/pl-PL/sysopswarszawa/events/300921603/  
@@ -43,6 +55,12 @@ https://www.meetup.com/pl-PL/techspot/events/301016403/?response=3&action=rsvp
 Akademia ISSA: Cybeer -  Maskowanie danych wrażliwych – studium przypadku. Twilight Cyber  
 23 maja 2024  
 https://docs.google.com/forms/d/e/1FAIpQLScLA91hSwHuXJbMvw8iLvKgtg1deNiWAeykDyYz9waEKkKeCA/viewform?fbzx=8607792222702010790  
+<br>
+<br>
+
+Klasyfikacja incydentów cyberbezpieczeństwa – praktyka techniczna na styku z wymogami compliance  
+21 maja 2024  
+https://docs.google.com/forms/d/e/1FAIpQLSfpnkxUJEHwano7WnVYSVlZncibGHaYR_b97j7XNChyl-AWmw/viewform?fbzx=6048206488691982226  
 <br>
 <br>
 
