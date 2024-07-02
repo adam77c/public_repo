@@ -1,3 +1,8 @@
+Detecting Lateral Movement with Open-Source Network Monitoring & MITRE ATT&CK
+2 lipca 2024
+https://www.brighttalk.com/service/player/en-US/theme/default/channel/13279/webcast/617993/play?b=98246&isRedirected=false&embedUrl=https%3A%2F%2Fwww.isc2.org%2Fprofessional-development%2Fwebinars%2Femea-webinars%3Fcommid%3D617736
+
+
 Incydent i co dalej? (#22 ISSA Warszawa)
 18 czerwca 2024
 https://local.issa.org.pl/event/incydent-i-co-dalej/
