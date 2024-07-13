@@ -1,3 +1,11 @@
+
+
+DC4822 (Warsaw DEFCON Group) Meetup - Jul05  
+5 lipca 2024  
+https://www.meetup.com/dc4822/events/301637110/  
+<br>
+<br>
+
 Detecting Lateral Movement with Open-Source Network Monitoring & MITRE ATT&CK  
 2 lipca 2024  
 https://www.brighttalk.com/service/player/en-US/theme/default/channel/13279/webcast/617993/play?b=98246&isRedirected=false&embedUrl=https%3A%2F%2Fwww.isc2.org%2Fprofessional-development%2Fwebinars%2Femea-webinars%3Fcommid%3D617736  
