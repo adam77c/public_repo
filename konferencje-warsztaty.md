@@ -1,4 +1,8 @@
-
+139. Spotkanie Data Community - VLS w PBI + podróż z Warehouse do Lakehouse  
+5 września 2024  
+https://www.meetup.com/pl-PL/data-community-warsaw/events/303020837/  
+<br>
+<br>
 
 DC4822 (Warsaw DEFCON Group) Meetup - Jul05  
 5 lipca 2024  
