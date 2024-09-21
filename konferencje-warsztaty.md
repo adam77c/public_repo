@@ -1,3 +1,31 @@
+SysOps/DevOps Warszawa MeetUp #67
+19 września 2024
+https://www.meetup.com/pl-PL/sysopswarszawa/events/302666392/
+<br>
+<br>
+
+AWS Cloud Day Warsaw
+18 września 2024
+https://aws.amazon.com/events/cloud-days/warsaw/
+<br>
+<br>
+
+Trafford Security Day’24
+17 września 2024
+https://traffordit.pl/trafford-security-day-2024/
+<br>
+<br>
+
+67 spotkanie Microsoft Azure User Group Poland w Warszawie  
+11 września 2024  
+https://www.meetup.com/pl-PL/microsoft-azure-users-group-poland/events/303091203/  
+<br>
+<br>
+
+Google Cloud LiftOff
+11 września 2024
+https://cloudonair.withgoogle.com/events/cloud-universe-lift-off
+
 139 Spotkanie Data Community - VLS w PBI + podróż z Warehouse do Lakehouse
 5 września 2024  
 https://www.meetup.com/pl-PL/data-community-warsaw/events/303020837/  
