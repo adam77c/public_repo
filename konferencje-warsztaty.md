@@ -1,18 +1,30 @@
-SysOps/DevOps Warszawa MeetUp #67
-19 września 2024
-https://www.meetup.com/pl-PL/sysopswarszawa/events/302666392/
+Akademia ISSA: GRC Przegląd aktualnych zagrożeń cyberbezpieczeństwa – jak wzmacniać bezpieczeństwo organizacji w kontekście wzrostu ataków cyberbezpieczeństwa i nowych wektorów ataków biorąc pod uwagę wymagania compliance  
+24 września 2024  
+https://docs.google.com/forms/d/e/1FAIpQLSf953vtzmL64e3DG173fKeF95QfVX7BPPdSF9s9gTsfej6I4w/viewform  
 <br>
 <br>
 
-AWS Cloud Day Warsaw
-18 września 2024
-https://aws.amazon.com/events/cloud-days/warsaw/
+Data AI Conf 2024 | Conference about Data  
+24 września 2024  
+https://dataaiconf.pl/  
 <br>
 <br>
 
-Trafford Security Day’24
-17 września 2024
-https://traffordit.pl/trafford-security-day-2024/
+SysOps/DevOps Warszawa MeetUp #67  
+19 września 2024  
+https://www.meetup.com/pl-PL/sysopswarszawa/events/302666392/  
+<br>
+<br>
+
+AWS Cloud Day Warsaw  
+18 września 2024  
+https://aws.amazon.com/events/cloud-days/warsaw/  
+<br>
+<br>
+
+Trafford Security Day’24  
+17 września 2024  
+https://traffordit.pl/trafford-security-day-2024/  
 <br>
 <br>
 
@@ -22,11 +34,13 @@ https://www.meetup.com/pl-PL/microsoft-azure-users-group-poland/events/303091203
 <br>
 <br>
 
-Google Cloud LiftOff
-11 września 2024
-https://cloudonair.withgoogle.com/events/cloud-universe-lift-off
+Google Cloud LiftOff  
+11 września 2024  
+https://cloudonair.withgoogle.com/events/cloud-universe-lift-off  
+<br>
+<br>
 
-139 Spotkanie Data Community - VLS w PBI + podróż z Warehouse do Lakehouse
+139 Spotkanie Data Community - VLS w PBI + podróż z Warehouse do Lakehouse  
 5 września 2024  
 https://www.meetup.com/pl-PL/data-community-warsaw/events/303020837/  
 <br>
