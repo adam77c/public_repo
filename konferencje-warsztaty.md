@@ -4,6 +4,13 @@ https://www.meetup.com/pl-PL/automate-now-warsaw-1/events/303522176/
 <br>
 <br>
 
+Beyond the Playbook: How to Properly Leverage the MITRE ATT&CK Framework  
+9 października 2024  
+https://www.netwitness.com/beyond-the-playbook-how-to-properly-leverage-the-mitre-attck-framework/?trk=netwitness-email-webinar  
+wideo: https://www.netwitness.com/thank-you-for-downloading-beyond-the-playbook-how-to-properly-leverage-the-mitre-attck-framework-on-demand/  
+<br>
+<br>
+
 The Power of GenAI on AWS: Fueling Business Transformation  
 2 października 2024  
 https://aws-experience.com/emea/de-central-growth/e/555aa/the-power-of-genai-on-aws-fueling-business-transformation  
@@ -12,7 +19,7 @@ https://aws-experience.com/emea/de-central-growth/e/555aa/the-power-of-genai-on-
 
 CyBeer  Purple Team w praktyce: symulacje ataków, identyfikacja incydentów i automatyzacja reakcji z SIEM/SOAR, w tle NIS2/DORA  
 26 września 2024  
-https://docs.google.com/forms/d/e/1FAIpQLSe_SuRaZRp_bzjtdfQnoqgC9Z2cjlk9oh90TdKH04bKIKMgBw/viewform  
+https://issa.org.pl/wydarzenia/26-09-akademia-issa-cybeer-purple-team-w-praktyce-symulacje-atakow-identyfikacja-incydentow-i-automatyzacja-reakcji-z-siem-soar-w-tle-nis2-dora  
 <br>
 <br>
 
@@ -30,7 +37,7 @@ https://local.issa.org.pl/event/bcm-iso-22301/
 
 Akademia ISSA: GRC Przegląd aktualnych zagrożeń cyberbezpieczeństwa – jak wzmacniać bezpieczeństwo organizacji w kontekście wzrostu ataków cyberbezpieczeństwa i nowych wektorów ataków biorąc pod uwagę wymagania compliance  
 24 września 2024  
-https://docs.google.com/forms/d/e/1FAIpQLSf953vtzmL64e3DG173fKeF95QfVX7BPPdSF9s9gTsfej6I4w/viewform  
+https://issa.org.pl/wydarzenia/24-09-akademia-issa-grc-przeglad-aktualnych-zagrozen-cyberbezpieczenstwa-jak-wzmacniac-bezpieczenstwo-organizacji-w-kontekscie-wzrostu-atakow-cyberbezpieczenstwa-i-nowych-wektorow-atakow-biorac-pod-uwage-wymagania-compliance  
 <br>
 <br>
 
