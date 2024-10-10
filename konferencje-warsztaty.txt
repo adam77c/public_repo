@@ -1,3 +1,23 @@
+AutomateNOW! Warsaw #13: DataOps, case study Data Vault i AI na Snowflake
+9 października 2024
+https://www.meetup.com/pl-PL/automate-now-warsaw-1/events/303522176/
+
+
+The Power of GenAI on AWS: Fueling Business Transformation
+2 października 2024
+https://aws-experience.com/emea/de-central-growth/e/555aa/the-power-of-genai-on-aws-fueling-business-transformation
+
+
+CyBeer  Purple Team w praktyce: symulacje ataków, identyfikacja incydentów i automatyzacja reakcji z SIEM/SOAR, w tle NIS2/DORA
+26 września 2024
+https://docs.google.com/forms/d/e/1FAIpQLSe_SuRaZRp_bzjtdfQnoqgC9Z2cjlk9oh90TdKH04bKIKMgBw/viewform
+
+
+Plusy dodatnie i plusy ujemne … czyli co daje, a co zabiera ścieżka menedżerska w cybersecurity?
+26 września 2024
+https://atsummit.pl/webinar-2024/
+
+
 ISSA Polska 23 Warszawa: Business Continuity Management – ISO 22301
 25 września 2024
 https://local.issa.org.pl/event/bcm-iso-22301/
