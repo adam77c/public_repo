@@ -1,3 +1,9 @@
+ISSA Polska 24 Warszawa: Jak hakować ludzi?  
+16 października 2024  
+https://local.issa.org.pl/event/24-warszawa-jak-hakowac-ludzi-wprowadzenie/  
+<br>
+<br>
+
 DC4822 (Warsaw DEFCON Group) Meetup #6 - Oct11  
 11 października 2024  
 https://www.meetup.com/pl-PL/dc4822/events/303599244/  
