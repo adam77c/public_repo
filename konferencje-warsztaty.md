@@ -1,3 +1,9 @@
+SysOps/DevOps Warszawa MeetUp #68  
+17 października 2024  
+https://www.meetup.com/pl-PL/sysopswarszawa/events/303408245/  
+<br>
+<br>
+
 ISSA Polska 24 Warszawa: Jak hakować ludzi?  
 16 października 2024  
 https://local.issa.org.pl/event/24-warszawa-jak-hakowac-ludzi-wprowadzenie/  
