@@ -1,3 +1,15 @@
+AMP #3: Meetup niespodzianka Oracle  
+24 października 2024  
+https://www.meetup.com/pl-PL/apex-meetup-poland/events/303917248/  
+<br>
+<br>
+
+Observability Warsaw 2024  
+23 października 2024  
+https://observabilitywarsaw.pl/  
+<br>
+<br>
+
 SysOps/DevOps Warszawa MeetUp #68  
 17 października 2024  
 https://www.meetup.com/pl-PL/sysopswarszawa/events/303408245/  
