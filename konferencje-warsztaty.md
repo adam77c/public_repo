@@ -1,3 +1,9 @@
+Google Cloud Summit Poland 2024  
+6 listopada 2024  
+https://cloudonair.withgoogle.com/events/summit-poland-24  
+<br>
+<br>
+
 AMP #3: Meetup niespodzianka Oracle  
 24 października 2024  
 https://www.meetup.com/pl-PL/apex-meetup-poland/events/303917248/  
