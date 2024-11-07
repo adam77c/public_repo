@@ -1,3 +1,9 @@
+xSOC vs. DORA, NIS2 i UKSC
+7 listopada 2024
+https://www.linkedin.com/posts/trafford-it_ryzyko-czy-ryzykanctwo-wyb%C3%B3r-nale%C5%BCy-do-ciebie-activity-7252586139004375040-b2B2?utm_source=share&utm_medium=member_desktop
+<br>
+<br>
+
 Google Cloud Summit Poland 2024  
 6 listopada 2024  
 https://cloudonair.withgoogle.com/events/summit-poland-24  
