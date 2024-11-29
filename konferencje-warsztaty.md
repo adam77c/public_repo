@@ -1,3 +1,9 @@
+Elastic Day Poland  
+28 listopada 2024  
+https://elasticdaypoland.splashthat.com/  
+<br>
+<br>
+
 Cloud Security TechSpot  
 8 listopada 2024  
 https://techspot.onthespotdev.com/cloud-security  
