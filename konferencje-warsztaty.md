@@ -1,3 +1,9 @@
+ForFin Forum Finansów i Inwestycji 2024  
+30 grudnia 2024  
+https://www.forfin.pl/program/  
+<br>
+<br>
+
 Elastic Day Poland  
 28 listopada 2024  
 https://elasticdaypoland.splashthat.com/  
