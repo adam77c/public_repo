@@ -1,6 +1,37 @@
+Solana Superteam Poland - Launch Party  
+23 stycznia 2025  
+https://lu.ma/2j8bms45?tk=WEdCkX  
+<br>
+<br>
+
+Snowflake Engineers for Engineers #3  
+22 stycznia 2025  
+https://careers.snowflake.com/us/en/event/6762f05a96f7a262864bb0d2/Engineers-for-Engineers-3  
+<br>
+<br>
+
+SysOps/DevOps Warszawa MeetUp #71  
+16 stycznia 2025  
+https://www.meetup.com/pl-PL/sysopswarszawa/events/304912454/  
+Prelekcja #1: “Jak w 5 minut skonfigurować pipeline CI/CD Salesforce?” - Łukasz Ceran  
+Prelekcja #2: “Observability query languages, the past, present and the future” - Jacek Migdał  
+<br>
+<br>
+
+2024  
+<br>
+<br>
+
 ForFin Forum Finansów i Inwestycji 2024  
 30 grudnia 2024  
 https://www.forfin.pl/program/  
+<br>
+<br>
+
+Pułapki na drodze do zgodności z NIS 2  
+10 grudnia 2024  
+https://webinar-nis2.trecom.pl/  
+wideo: https://app.getresponse.com/click.html?x=a62b&lc=hm92v6&mc=IC&s=BeFOgEy&u=t7wXf&z=EJVu9q8&  
 <br>
 <br>
 
