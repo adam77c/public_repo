@@ -1,3 +1,14 @@
+
+
+SysOps/DevOps Warszawa MeetUp #72  
+20 lutego 2025  
+https://www.meetup.com/pl-PL/sysopswarszawa/events/305587427/?eventorigin=home_page_upcoming_events%24all  
+Prelekcja #1: “Migracja ekosystemu aplikacji Fundacji WOŚP do chmury obliczeniowej Google Cloud” - Jerzy Ochnio  
+Lightning Talk: “Przygody z DNS, gdy klient chce zjeść ciastko i nadal je mieć” - Michał Frontczak  
+Prelekcja #2: “Co prawnik powinien powiedzieć developerowi o AI-owych przepisach?” - Paula Skrzypecka  
+<br>
+<br>
+
 Solana Superteam Poland - Launch Party  
 23 stycznia 2025  
 https://lu.ma/2j8bms45?tk=WEdCkX  
