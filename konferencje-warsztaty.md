@@ -1,4 +1,86 @@
+SysOps/DevOps Warszawa MeetUp #74  
+10 kwietnia 2025  
+https://www.meetup.com/pl-PL/sysopswarszawa/events/306588761/  
+“IaC w skali: praktyki, które się sprawdzają” - Piotr Wachulec  
+“One key to rule them all, czyli o wprowadzaniu szyfrowania end-to-end w rozwiązania multiplatformowe” - Błażej Zyglarski, Dawid Jenczewski  
+<br>
+<br>
 
+OpenLineage Meetup @ Google  
+3 kwietnia 2025  
+https://www.meetup.com/pl-PL/warsaw-openlineage-meetup-group/events/305919584/  
+GCP Composer Migration to OpenLineage (Augusto Hidalgo, Google)  
+Adding OpenLineage support to Airflow operators (Kacper Muda, GetInData now Astronomer)  
+Are they compatible? Standardized compatibility testing for OpenLineage (Tomasz Nazarewicz, GetInData)  
+Connecting OpenLineage within Observability Ecosystems (Maciej Obuchowski, Datadog)  
+Exposing metrics through Spark OpenLineage connector (Paweł Leszczynski, GetInData)  
+<br>
+<br>
+
+TRAFFORD IT (Thales + Imperva)  
+2 kwietnia 2025  
+Kluczowe funkcjonalności systemów: WAF Gateway, CloudWAF, DDoS Network Protection, API Protection, Advanced BOT Protection  
+Możliwości systemów: DAM Gateway, DSF HUB (JSonar), DRA, CipherTrust Data Protection Platform, Transparent Encryption, CipherTrust Database Protection Solutions (CTE, TDE/EKM, CADP)  
+Przypadki użycia w kontekście DataSec – Luna HSM  
+Plany rozwoju produktów i ich wzajemnej integracji w przyszłości  
+<br>
+<br>
+
+WordUp Warszawa #BEZPIECZEŃSTWO  
+1 kwietnia 2025  
+https://app.evenea.pl/event/902653-1/index/index  
+"Aktualizacje - to przecież tylko jedno kliknięcie" - Krzysiek Dróżdż  
+"Bezpieczeństwo w czasie używania i administrowania witryną korzystającą z WordPressa" - Marcin Pietrzak  
+"Jak nie dać sobie ukraść 100000 €" - Wojciech Babicz  
+<br>
+<br>
+
+ISSA #28 Warszawa: Wykrywanie i reagowanie z systemami EDR i XDR w praktyce  
+27 marca 2025  
+https://local.issa.org.pl/event/edr-xdr-w-praktyce-2025/  
+Wykrywanie i reagowanie z systemami EDR i XDR w praktyce – Aleksander Kostuch, Stormshield – prezentacja, pokaz i panel dyskusyjny.  
+<br>
+<br>
+
+AWS Meetup 03/25 - AWS User Group Warsaw [EN]  
+26 marca 2025  
+https://www.meetup.com/pl-PL/aws-user-group-warsaw/events/305738003/  
+How we ended up with AWS CodeBuild as a Shared Self Hosted Github Action Runners - Michał Malinowski  
+Does my LLM return correct results? - Michał Krzyżanowski  
+<br>
+<br>
+
+DC4822 (Warsaw DEFCON Group) Meetup #8  
+21 marca 2025  
+https://www.meetup.com/pl-PL/dc4822/events/306025065/  
+Jak dzieci kradną w sieci - co się dzieje na Telegramie, kiedy rodzice nie patrzą - Adam Haertle  
+<br>
+<br>
+
+SysOps/DevOps Warszawa MeetUp #73  
+20 marca 2025  
+https://www.meetup.com/pl-PL/sysopswarszawa/events/306005647/  
+“Git - like a pro!” - Mateusz Adamowski  
+“Nietrywialne oblicza sieci bezprzewodowych” - Daniel Świątek  
+<br>
+<br>
+
+QA Evolution Meetup: Level Up Your Testing Skills  
+9 marca 2025  
+https://www.meetup.com/pl-PL/qa-engineers-in-warsaw/events/306461203/  
+From Manual QA to Test Automation  
+Setting Up Test Automation from Scratch  
+Test Automation Best Practices  
+<br>
+<br>
+
+AWS Meetup 02/25 - AWS User Group Warsaw [EN]  
+27 lutego 2025  
+https://www.meetup.com/pl-PL/aws-user-group-warsaw/events/305737960/  
+Michał Plebański - "Mastering AWS accounts management - Landing zone, Control Tower and Account Factory for Terraform"  
+Wojtek Żydecki & Mohsen Shaali - "Manage your Edge with AWS IoT Greengrass"  
+<br>
+<br>
 
 SysOps/DevOps Warszawa MeetUp #72  
 20 lutego 2025  
@@ -29,7 +111,7 @@ Prelekcja #2: “Observability query languages, the past, present and the future
 <br>
 <br>
 
-2024  
+# 2024    
 <br>
 <br>
 
