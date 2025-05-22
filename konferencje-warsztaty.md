@@ -1,3 +1,56 @@
+SecureWay #3 - Red teaming. Takie lepsze pentesty?  
+20 maja 2025  
+Startup Miesiąca: Vidoc Security, Dawid Moczadło  
+Piotr Więcek | Tomasz Bukowski | Panel dyskusyjny z publicznością (Więcek, Bukowski, Broniarz)  
+<br>
+<br>
+
+AWS Meetup 05/2025 - AWS User Group Warsaw [EN]  
+19 maja 2025  
+https://www.meetup.com/pl-PL/aws-user-group-warsaw/events/307547220/?eventOrigin=home_page_upcoming_events%24all  
+Grzegorz Łoszewski & Tomasz Breś - Service Control Policy (SCP) - It's not all it's cracked up to be  
+Kiryl Surahatau - FinOps at AWS: Automated Cost Efficiency  
+<br>
+<br>
+
+Pie & AI: Sii AI Tour 2025  
+13 maja 2025  
+https://sii.pl/wydarzenia/pie-and-ai-sii-ai-tour-2025-warszawa/  
+Jacek Stokowski: Jak zostałem pierwszym muzykiem AI w Polsce  
+Paweł Cyrta: Bielik – polski Large Language Mode  
+Konrad Wojciechowski: Czy Graph RAG to prawdziwy gamechanger?  
+<br>
+<br>
+
+ISSA #29 Warszawa: CMMI i VDA w praktyce + Car Hacking  
+8 maja 2025  
+https://local.issa.org.pl/event/29-warszawa-cmmi-i-vda-w-praktyce-car-hacking/  
+CMMI i VDA Security Assessment jako narzędzia oceny dojrzałości cybersecurity – Jak nie zgubić się w normach upraszczając mierzenie i wyznaczanie celów bezpieczeństwa: od usług IT po konfigurację systemów. Kamila Westfalewicz  
+Awsome Car Hacking jak ukraść toyote? Jakub Lipiec  
+<br>
+<br>
+
+Dataform & BigQuery Workflows & GA4  
+23 kwietnia 2025  
+https://www.meetup.com/pl-PL/bigquery-and-gemini-meetup/events/307174595/  
+<br>
+<br>
+
+Tokenomics and Market Making  
+22 kwietnia 2025  
+https://lu.ma/TokenomicsandMM?tk=tauo9s  
+Vlad (Light Labs) “The Impact of Tokenomics on Market Making”  
+Grzegorz Pisula (Bitget) “Market Making from Bitget's Perspective”  
+Blake Lezenski (Outlier Ventures) “Token Incentives & Fundraising”  
+Karol Chlebowski (Match-Flow) “Market Making & Liquidity”
+<br>
+<br>
+
+SecureWay #2 - Ransomware  
+15 maja 2025  
+<br>
+<br>
+
 SysOps/DevOps Warszawa MeetUp #74  
 10 kwietnia 2025  
 https://www.meetup.com/pl-PL/sysopswarszawa/events/306588761/  
