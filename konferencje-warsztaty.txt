@@ -1,3 +1,78 @@
+POZNAJ CISCO SECURE NETWORK ANALYTICS
+25 czerwca 2025
+https://cisco-sna.trecom.pl/#section-12c653d475bb
+Część teoretyczna:
+• Co to jest system Network Detections And Response (NDR)
+• Wstęp do Cisco Secure Network Analytics (SNA)
+• Architektura i komponenty systemu SNA
+• Źródła danych
+• Segmentacja
+• Silniki detekcji zagrożeń
+• Integracja z systemami zewnętrznymi
+Część praktyczna: praca w środowisku laboratoryjnym
+
+
+Explorowanie domeny w oparciu o AI - Tomasz Ducin
+24 czerwca 2025
+https://www.meetup.com/pl-PL/ddd-waw/events/308548388/
+Na przykładzie branży logistyczno-transportowej pokażę, jak wykorzystać narzędzia AI do eksploracji wiedzy branżowej, budowania kontekstu i szybkiego dojścia do sensownych modeli domenowych. Będzie też o promptach, terminologii, regułach biznesowych i generowaniu diagramów.
+
+
+SysOps/DevOps Warszawa MeetUp #76
+12 czerwca 2025
+https://www.meetup.com/pl-PL/sysopswarszawa/events/307858285/?eventOrigin=home_page_upcoming_events%24all
+“Wielki model, wielka odpowiedzialność. Zagrożenia i bezpieczeństwo w erze generatywnej sztucznej inteligencji” - Tomi Wójtowicz
+“Jak zautomatyzować deployment API Gateway w Terraformie?” - Paweł Hajduk
+“Jak zwirtualizowaliśmy call center?” - Jakub Siatkowski
+
+
+Arrow MultiSolution Day Poland 2025
+12 czerwca 2025
+https://www.arrow.com/en/research-and-events/events/arrow-multisolution-day-poland-2025
+Cyber Resilience Act (CRA) - Microchip Value Propositions How to Secure IoT and Industrial applications for CRA, Presenter: Miroslaw Dybizbanski
+Niebezpiecznik: Jak zhackować dom i firmę przyszłość? Czyli ataki na Internet Rzeczy (IoT)
+
+
+Dive into Data Meetup #15
+9 czerwca 2025
+https://www.meetup.com/pl-PL/softservepoland/events/307798837/
+"Why Delta Lake changes everything?" by Roman Dryndik, Senior Big Data Engineer at SoftServe
+"A Multi-layered Approach to RAG Hallucination Prevention" by Jakub Mizera, Senior Data Scientist at SoftServe
+
+
+AI Stage Warsaw #3 + Badanie branży IT 
+2 Czerwca 2025
+https://app.evenea.pl/event/aistagewarsaw3/
+AI w AWS - Amazon Bedrock i nie tylko - Piotr Boniński 
+Przetwarzanie wideo oparte o AI - Paweł Ekk-Cierniakowski
+AutoML w Microsoft Fabric czyli AI dla ludu- Hubert Kobierzewski
+
+
+Cashifam Warszawa 29.05 | Cashify x OKX x Stable Value
+29 maja 2025
+https://lu.ma/t46lmf38?tk=7patJm
+Czy grozi nam kryzys i czy warto pod niego grać? Jakub Mościcki
+Sztuka przetrwania: jak nie zniknąć z rynku kryptowalut? Maciej Tomczyk (CEO KryptoEkipa) 
+Daniel Kostecki - Jak działania banków centralnych wpływają na cenę bitcoina?
+Droga do pierwszego miliona: kryptowaluty czy rynki tradycyjne? Debata: Jakub Mościcki, Maciej Tomczyk, Chris Perdek, Jakub Bartoszek, Daniel Kostecki
+
+
+Automate NOW! Meetup: Beyond Airflow: The Art of Enterprise Automation
+28 maja 2025
+https://www.meetup.com/pl-PL/automate-now-warsaw-1/events/307523582/
+Strategiczne przewagi orkiestracji klasy enterprise nad open source (Anna Kondrat, Beta Systems)
+Praktyczny use case: efektywna orkiestracja enterprise z ANOW! Automate oraz bezproblemowa migracja z Airflow (Daniel Sosiński, Beta Systems)
+
+
+AI Transformation | Are AI Agents Your Next Work Colleagues
+27 maja 2025
+https://www.meetup.com/pl-PL/warsaw-ai-meetup-group/events/307932425/
+"Are AI Agents Your Next Work Colleagues?" by Samuli Salmela
+"Do We Still Need Good Engineers in the Age of AI?" by Mateusz Jabłonowski
+"Let's tame this animal: AI as a collaborator, not a competitor", Guest Speaker, Piotr Senkus, AI Professor, University for Peace, United Nations
+"From Hype to Value: What It Really Takes to Implement AI Successfully in Organizations" - Panel Discussion Moderated by Iwona Szczepanek and Bartosz Nowojski
+
+
 SecureWay #3 - Red teaming. Takie lepsze pentesty?
 20 maja 2025
 Startup Miesiąca: Vidoc Security, Dawid Moczadło
