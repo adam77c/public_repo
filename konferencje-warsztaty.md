@@ -1,4 +1,31 @@
-POZNAJ CISCO SECURE NETWORK ANALYTICS  
+**PM w sprzedaży / wyzwania agentów AI w zarządzaniu produktem**  
+31 lipca 2025  
+https://www.meetup.com/pl-PL/warsaw-society-of-product-managers/events/309926341/?response=3&dispatch_id=68795ace0988ba18824f772d7739d838  
+1. Dylematy produktowca w dobie Agentic AI - Tomasz Chojecki, Tech Product Discovery & Delivery, Allegro  
+2. Między sprzedawcą a sprzedażą – jak zmienia się produkt i rola PM-a - Marlena Rochmińska, Product Manager, Commercial, OLX  
+<br>
+<br>
+
+**DC4822 (Warsaw DEFCON Group) Meetup #9**  
+4 lipca 2025  
+https://www.meetup.com/pl-PL/dc4822/events/308457846/?response=3&dispatch_id=684f2ced90bd04f5c1113ca71a78a18c  
+Zhakowała firmę jednym kliknięciem, pentesterzy jej nienawidzą - Zuzanna Bernacka  
+Wyciek, którego nie było... - Wiktor Szymański (Empik)  
+<br>
+<br>
+
+**Strategia produktowa i zarządzanie ryzykiem w produkcie (Meetup + warsztat)**  
+30 czerwca 2025  
+https://www.meetup.com/pl-PL/warsaw-society-of-product-managers/events/308134176/?recId=e05b2f70-3652-418b-a212-36be5493df74&recSource=ml-popular-events-nearby-offline&searchId=31c0f427-c405-43b5-8fd8-dc9fe469b785&eventOrigin=find_page%24all  
+O czym będziemy rozmawiać:  
+    Strategia produktowa  
+    Zarządzanie ryzykiem w produkcie  
+    Warsztaty  
+    Moderowany networking  
+<br>
+<br>
+
+**POZNAJ CISCO SECURE NETWORK ANALYTICS**  
 25 czerwca 2025  
 https://cisco-sna.trecom.pl/#section-12c653d475bb  
 Część teoretyczna:  
@@ -13,14 +40,14 @@ Część praktyczna: praca w środowisku laboratoryjnym
 <br>
 <br>
 
-Explorowanie domeny w oparciu o AI - Tomasz Ducin  
+**Explorowanie domeny w oparciu o AI - Tomasz Ducin**  
 24 czerwca 2025  
 https://www.meetup.com/pl-PL/ddd-waw/events/308548388/  
 Na przykładzie branży logistyczno-transportowej pokażę, jak wykorzystać narzędzia AI do eksploracji wiedzy branżowej, budowania kontekstu i szybkiego dojścia do sensownych modeli domenowych. Będzie też o promptach, terminologii, regułach biznesowych i generowaniu diagramów.  
 <br>
 <br>
 
-SysOps/DevOps Warszawa MeetUp #76  
+**SysOps/DevOps Warszawa MeetUp #76**  
 12 czerwca 2025  
 https://www.meetup.com/pl-PL/sysopswarszawa/events/307858285/?eventOrigin=home_page_upcoming_events%24all  
 “Wielki model, wielka odpowiedzialność. Zagrożenia i bezpieczeństwo w erze generatywnej sztucznej inteligencji” - Tomi Wójtowicz  
@@ -29,7 +56,7 @@ https://www.meetup.com/pl-PL/sysopswarszawa/events/307858285/?eventOrigin=home_p
 <br>
 <br>
 
-Arrow MultiSolution Day Poland 2025  
+**Arrow MultiSolution Day Poland 2025**  
 12 czerwca 2025  
 https://www.arrow.com/en/research-and-events/events/arrow-multisolution-day-poland-2025  
 Cyber Resilience Act (CRA) - Microchip Value Propositions How to Secure IoT and Industrial applications for CRA, Presenter: Miroslaw Dybizbanski  
@@ -37,7 +64,7 @@ Niebezpiecznik: Jak zhackować dom i firmę przyszłość? Czyli ataki na Intern
 <br>
 <br>
 
-Dive into Data Meetup #15  
+**Dive into Data Meetup #15**  
 9 czerwca 2025  
 https://www.meetup.com/pl-PL/softservepoland/events/307798837/  
 "Why Delta Lake changes everything?" by Roman Dryndik, Senior Big Data Engineer at SoftServe  
@@ -45,7 +72,7 @@ https://www.meetup.com/pl-PL/softservepoland/events/307798837/
 <br>
 <br>
 
-AI Stage Warsaw #3 + Badanie branży IT  
+**AI Stage Warsaw #3 + Badanie branży IT**  
 2 czerwca 2025  
 https://app.evenea.pl/event/aistagewarsaw3/  
 AI w AWS - Amazon Bedrock i nie tylko - Piotr Boniński  
@@ -54,7 +81,7 @@ AutoML w Microsoft Fabric czyli AI dla ludu- Hubert Kobierzewski
 <br>
 <br>
 
-Cashifam Warszawa 29.05 | Cashify x OKX x Stable Value  
+**Cashifam Warszawa 29.05 | Cashify x OKX x Stable Value**  
 29 maja 2025  
 https://lu.ma/t46lmf38?tk=7patJm  
 Czy grozi nam kryzys i czy warto pod niego grać? Jakub Mościcki  
@@ -64,7 +91,7 @@ Droga do pierwszego miliona: kryptowaluty czy rynki tradycyjne? Debata: Jakub Mo
 <br>
 <br>
 
-Automate NOW! Meetup: Beyond Airflow: The Art of Enterprise Automation  
+**Automate NOW! Meetup: Beyond Airflow: The Art of Enterprise Automation**  
 28 maja 2025  
 https://www.meetup.com/pl-PL/automate-now-warsaw-1/events/307523582/  
 Strategiczne przewagi orkiestracji klasy enterprise nad open source (Anna Kondrat, Beta Systems)  
@@ -72,7 +99,7 @@ Praktyczny use case: efektywna orkiestracja enterprise z ANOW! Automate oraz bez
 <br>
 <br>
 
-AI Transformation | Are AI Agents Your Next Work Colleagues  
+**AI Transformation | Are AI Agents Your Next Work Colleagues**  
 27 maja 2025  
 https://www.meetup.com/pl-PL/warsaw-ai-meetup-group/events/307932425/  
 "Are AI Agents Your Next Work Colleagues?" by Samuli Salmela  
@@ -82,14 +109,14 @@ https://www.meetup.com/pl-PL/warsaw-ai-meetup-group/events/307932425/
 <br>
 <br>
 
-SecureWay #3 - Red teaming. Takie lepsze pentesty?  
+**SecureWay #3 - Red teaming. Takie lepsze pentesty?**  
 20 maja 2025  
 Startup Miesiąca: Vidoc Security, Dawid Moczadło  
 Piotr Więcek | Tomasz Bukowski | Panel dyskusyjny z publicznością (Więcek, Bukowski, Broniarz)  
 <br>
 <br>
 
-AWS Meetup 05/2025 - AWS User Group Warsaw [EN]  
+**AWS Meetup 05/2025 - AWS User Group Warsaw [EN]**  
 19 maja 2025  
 https://www.meetup.com/pl-PL/aws-user-group-warsaw/events/307547220/?eventOrigin=home_page_upcoming_events%24all  
 Grzegorz Łoszewski & Tomasz Breś - Service Control Policy (SCP) - It's not all it's cracked up to be  
@@ -97,7 +124,7 @@ Kiryl Surahatau - FinOps at AWS: Automated Cost Efficiency
 <br>
 <br>
 
-Pie & AI: Sii AI Tour 2025  
+**Pie & AI: Sii AI Tour 2025**  
 13 maja 2025  
 https://sii.pl/wydarzenia/pie-and-ai-sii-ai-tour-2025-warszawa/  
 Jacek Stokowski: Jak zostałem pierwszym muzykiem AI w Polsce  
@@ -106,7 +133,7 @@ Konrad Wojciechowski: Czy Graph RAG to prawdziwy gamechanger?
 <br>
 <br>
 
-ISSA #29 Warszawa: CMMI i VDA w praktyce + Car Hacking  
+**ISSA #29 Warszawa: CMMI i VDA w praktyce + Car Hacking**  
 8 maja 2025  
 https://local.issa.org.pl/event/29-warszawa-cmmi-i-vda-w-praktyce-car-hacking/  
 CMMI i VDA Security Assessment jako narzędzia oceny dojrzałości cybersecurity – Jak nie zgubić się w normach upraszczając mierzenie i wyznaczanie celów bezpieczeństwa: od usług IT po konfigurację systemów. Kamila Westfalewicz  
@@ -114,13 +141,13 @@ Awsome Car Hacking jak ukraść toyote? Jakub Lipiec
 <br>
 <br>
 
-Dataform & BigQuery Workflows & GA4  
+**Dataform & BigQuery Workflows & GA4**  
 23 kwietnia 2025  
 https://www.meetup.com/pl-PL/bigquery-and-gemini-meetup/events/307174595/  
 <br>
 <br>
 
-Tokenomics and Market Making  
+**Tokenomics and Market Making**  
 22 kwietnia 2025  
 https://lu.ma/TokenomicsandMM?tk=tauo9s  
 Vlad (Light Labs) “The Impact of Tokenomics on Market Making”  
@@ -130,12 +157,12 @@ Karol Chlebowski (Match-Flow) “Market Making & Liquidity”
 <br>
 <br>
 
-SecureWay #2 - Ransomware  
+**SecureWay #2 - Ransomware**  
 15 maja 2025  
 <br>
 <br>
 
-SysOps/DevOps Warszawa MeetUp #74  
+**SysOps/DevOps Warszawa MeetUp #74**  
 10 kwietnia 2025  
 https://www.meetup.com/pl-PL/sysopswarszawa/events/306588761/  
 “IaC w skali: praktyki, które się sprawdzają” - Piotr Wachulec  
@@ -143,7 +170,7 @@ https://www.meetup.com/pl-PL/sysopswarszawa/events/306588761/
 <br>
 <br>
 
-OpenLineage Meetup @ Google  
+**OpenLineage Meetup @ Google**  
 3 kwietnia 2025  
 https://www.meetup.com/pl-PL/warsaw-openlineage-meetup-group/events/305919584/  
 GCP Composer Migration to OpenLineage (Augusto Hidalgo, Google)  
@@ -154,7 +181,7 @@ Exposing metrics through Spark OpenLineage connector (Paweł Leszczynski, GetInD
 <br>
 <br>
 
-TRAFFORD IT (Thales + Imperva)  
+**TRAFFORD IT (Thales + Imperva)**  
 2 kwietnia 2025  
 Kluczowe funkcjonalności systemów: WAF Gateway, CloudWAF, DDoS Network Protection, API Protection, Advanced BOT Protection  
 Możliwości systemów: DAM Gateway, DSF HUB (JSonar), DRA, CipherTrust Data Protection Platform, Transparent Encryption, CipherTrust Database Protection Solutions (CTE, TDE/EKM, CADP)  
@@ -163,7 +190,7 @@ Plany rozwoju produktów i ich wzajemnej integracji w przyszłości
 <br>
 <br>
 
-WordUp Warszawa #BEZPIECZEŃSTWO  
+**WordUp Warszawa #BEZPIECZEŃSTWO**  
 1 kwietnia 2025  
 https://app.evenea.pl/event/902653-1/index/index  
 "Aktualizacje - to przecież tylko jedno kliknięcie" - Krzysiek Dróżdż  

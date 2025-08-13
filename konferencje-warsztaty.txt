@@ -1,3 +1,27 @@
+PM w sprzedaży / wyzwania agentów AI w zarządzaniu produktem
+31 lipca 2025
+https://www.meetup.com/pl-PL/warsaw-society-of-product-managers/events/309926341/?response=3&dispatch_id=68795ace0988ba18824f772d7739d838
+1. Dylematy produktowca w dobie Agentic AI - Tomasz Chojecki, Tech Product Discovery & Delivery, Allegro
+2. Między sprzedawcą a sprzedażą – jak zmienia się produkt i rola PM-a - Marlena Rochmińska, Product Manager, Commercial, OLX
+
+
+DC4822 (Warsaw DEFCON Group) Meetup #9 
+4 lipca 2025
+https://www.meetup.com/pl-PL/dc4822/events/308457846/?response=3&dispatch_id=684f2ced90bd04f5c1113ca71a78a18c
+Zhakowała firmę jednym kliknięciem, pentesterzy jej nienawidzą - Zuzanna Bernacka
+Wyciek, którego nie było... - Wiktor Szymański (Empik)
+
+
+Strategia produktowa i zarządzanie ryzykiem w produkcie (Meetup + warsztat)
+30 czerwca 2025
+https://www.meetup.com/pl-PL/warsaw-society-of-product-managers/events/308134176/?recId=e05b2f70-3652-418b-a212-36be5493df74&recSource=ml-popular-events-nearby-offline&searchId=31c0f427-c405-43b5-8fd8-dc9fe469b785&eventOrigin=find_page%24all
+O czym będziemy rozmawiać:
+    Strategia produktowa
+    Zarządzanie ryzykiem w produkcie
+    Warsztaty
+    Moderowany networking
+
+
 POZNAJ CISCO SECURE NETWORK ANALYTICS
 25 czerwca 2025
 https://cisco-sna.trecom.pl/#section-12c653d475bb
