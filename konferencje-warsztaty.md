@@ -1,3 +1,73 @@
+**AWS Community Day 2025**  
+18 września 2025  
+https://awscommunity.pl/  
+<br>
+<br>
+
+**SecureWay Meetup #5: NIS2 i nowelizacja KSC**  
+16 września 2025  
+https://secureway.pl/meetup/  
+1. Startup miesiąca: Sycope - Maciej Wilamowski  
+2. SOC z listka figowego - Maciej Broniarz  
+3. W oczekiwaniu na NIS2 - panel dyskusyjny  
+4. Panel dyskusyjny  
+<br>
+<br>
+
+**Jedno spojrzenie na całe ryzyko: jak z Tenable zyskać pełną kontrolę nad ryzykiem - także tym związanym ze sztuczną inteligencją!**  
+16 września 2025  
+https://info.tenable.com/EMEANORTHPL-Vulcanwebinar_RegistrationPage.html  
+Podczas webinaru pokażemy, jak:  
+    Dzięki Tenable One Connectors zintegrować dane z różnych źródeł (vulnerability management, endpoint, cloud, CMDB) i stworzyć jeden, uporządkowany obraz ryzyka.  
+    Użyć AI Exposure, aby wreszcie zobaczyć i kontrolować ryzyka związane z generatywną AI w Twojej organizacji.  
+    Skupić się na priorytetach biznesowych zamiast na ręcznym łączeniu raportów i gaszeniu pożarów.  
+    Oszczędzić nawet 75% czasu na agregacji danych i ograniczyć liczbę incydentów wymagających reakcji zespołu SOC.  
+Część praktyczna: przygotowaliśmy live demo Tenable One, abyś zobaczył/ła na własne oczy, jak działa unifikacja danych i jak w jednym panelu kontrolować ryzyko IT, OT i AI.  
+<br>
+<br>
+
+**Trafford Security Day 2025**  
+17 września 2025  
+https://trafford.pl/events/event-trafford/  
+TABLETOP 4: „Transgraniczny szturm na Bank pod presją wieloetapowych zagrożeń cybernetycznych – Atak na Finovate Bank S.A.”  
+<br>
+<br>
+
+**OWASP Meeting in Warsaw**  
+4 września 2025  
+https://www.meetup.com/pl-PL/owasp-poland/events/310716986/?eventOrigin=home_page_upcoming_events%24all  
+1. Current OWASP projects regarding AI security, Michał Kurek, OWASP Poland  
+2. CORS and PNA, Bart Stakun  
+3. Pentesting AWS based infrustructure, Maciej Pietraszko  
+4. Post-Quantum Cryptography, Patryk Gralewicz  
+<br>
+<br>
+
+**Cyber Defense Insights: Intelligence & Visibility**  
+4 września 2025  
+1. Elastic Agent – jedno narzędzie, pełna widoczność: od zbierania logów po ochronę endpointów  |  Cezary Bartsch, Trafford  
+2. Rola wywiadu cybernetycznego w ochronie ransomware - zobacz wszystko, zobacz pierwszy  |  Maciej Martinek, Recorded Future  
+<br>
+<br>
+
+**Cybersuwerenność a biznes IT**  
+28 sierpnia 2025  
+https://itwiz.pl/cybersuwerennosc-a-biznes-it-jak-sprzedawac-i-integrowac-w-epoce-dominacji-chmury-i-ai/  
+1. Cybersuwerenność, ale jaka? Nikodem Bończa Tomaszewski  
+2. Na czym polega dobra sprzedaż rozwiązań chmurowych AD 2025? Sławomir Soszyński, Łukasz Ozimek, Maciej Radzik, Tomasz Sobol, Stanisław Krzyżanowski.  
+3. Cybersuwerenność jest / nie jest tematem dla CIO/CTO Krzysztof Wykręt, Krzysztof Stump, Michał Głowińsk, Tomasz Sobol, Tomasz Wojciechowski.  
+<br>
+<br>
+
+**The QA Meetup: From Human Insight to AI Foresight**  
+21 sierpnia 2025  
+https://www.meetup.com/pl-PL/warsaw-tech-in-logistics-meetup-group/events/310306739/  
+1. The Psychology of Quality: Understanding the Human Side of Testing – by Mateusz Lewczuk  
+2. Integration of Robot Framework/Python and Third-Party Testing Tools – by Krzysztof Trybus  
+3. Sabotage by Design – Outsmarting the AI Blackbox – by Konrad Jędrzejczyk  
+<br>
+<br>
+
 **PM w sprzedaży / wyzwania agentów AI w zarządzaniu produktem**  
 31 lipca 2025  
 https://www.meetup.com/pl-PL/warsaw-society-of-product-managers/events/309926341/?response=3&dispatch_id=68795ace0988ba18824f772d7739d838  
