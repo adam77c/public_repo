@@ -1,6 +1,32 @@
 
 
 
+SysOps/DevOps Warszawa MeetUp #77
+25 września 2025
+https://www.meetup.com/pl-PL/sysopswarszawa/events/310481738/
+Prelekcja #1: “Od GPU do K8S: skalowalne streamowanie gier” - Jakub Zięba
+Lightning Talk: “Jak backup nadąża za światem IT” - Mariusz Rybusiński
+Prelekcja #2: “Warszawska sieć Meshtastic pod lupą” - Mateusz Nalewajski
+
+
+Ścieżka do inteligentnej i bezpiecznej sieci z Cisco i BlueCat Networks/LiveAction
+25 września 2025
+https://warsztatybluecat.netformers.pl/
+1. Ścieżka do inteligentnej sieci z BlueCat Networks, Guido Seelbach
+2. Odblokowanie elastyczności sieci – DDI dla operacji hybrydowych i wielochmurowych Bluecat/ DDI, Max Pedersen
+3. Ewolucja zarządzania siecią: od monitorowania do zarządzania opartego na sztucznej inteligencji, Linus Brand
+4. Cyberbezpieczeństwo w erze AI: Nowości z Cisco Live 2025, Marcin Klimowski
+
+
+Bezpieczna Transformacja: Cybersecurity i AI w Praktyce
+24 września 2025
+https://crayonevents.powerappsportals.com/en-US/event/?id=348345C8-695A-4C44-AEDD-F22BCECB4F9B&readableEventId=Bezpieczna_Transformacja_Cybersecurity_i_AI_w_Praktyce2821529141&msdynmkt_trackingcontext=51ae26a7-c989-409e-8acd-4a53799c0000&li_fat_id=83099c85-e596-427e-bc69-2c85b4fbbdaa#registrationform
+Sesja 1:  Zarządzanie Cybersecurity: Security posture management
+Sesja 2: Wdrażanie narzędzi z obszaru cybersecurity
+Sesja 3: Security, Compliance i Adopcja w dobie projektów AI
+Sesja 4: Backup jako ostatnia linia obrony przed ransomware
+
+
 AWS Community Day 2025
 18 września 2025
 https://awscommunity.pl/
