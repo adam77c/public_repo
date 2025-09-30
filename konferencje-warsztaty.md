@@ -1,3 +1,12 @@
+**Made in China Hackbreakers' Meetup 25x9**  
+30 września 2025  
+https://www.hackbreakers.pl/  
+1. Działania Chin w instytucjach międzynarodowych  
+2. Telefon designed in Poland manufactured in China  
+3. Zmiana w RODO: pseudoanonimizacja  
+4. Atrybucja chińskich ATP, TTP oczami wojska  
+<br>
+<br>
 
 **Agile Warsaw #329 Tomasz Wykowski: "Projektowanie adaptacyjnych organizacji**  
 29 września 2025  
