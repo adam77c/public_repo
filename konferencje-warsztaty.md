@@ -1,3 +1,11 @@
+
+**Agile Warsaw #329 Tomasz Wykowski: "Projektowanie adaptacyjnych organizacji**  
+29 września 2025  
+https://www.meetup.com/pl-PL/agilewarsaw/events/311091761/  
+W trakcie tej sesji przyjrzymy się różnym wzorcom projektowania organizacji i temu, jak wpływają one na codzienne działanie firm. Podzielimy się historiami firm, którym udało się skutecznie decydować, co warto budować i jak dostarczyć to zanim klient zmieni zdanie — ale opowiemy też o tych, którym zmiana nie wyszła.  
+<br>
+<br>
+
 **SysOps/DevOps Warszawa MeetUp #77**  
 25 września 2025  
 https://www.meetup.com/pl-PL/sysopswarszawa/events/310481738/  
