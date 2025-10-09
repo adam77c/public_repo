@@ -1,3 +1,24 @@
+**SEVENET SECURITY ROADSHOW**  
+7 października 2025  
+https://roadshow.sevenet.pl/warszawa/#agenda  
+1. One Cisco – Integracja Splunk i Cisco – skuteczne zarządzanie bezpieczeństwem i infrastrukturą sieciową (Michał Terbert, Radosław Sałapa)  
+2. Wykradzione dane logowania? Sprawdź, jak zabezpieczyć Active Directory przed ukrytymi atakami - CrowdStrike / iIT Distribution Polska (Bartosz Galoch, Przemysław Niedzielski)  
+3. Jak wyprzedzić cyberprzestępców? Extended Threat Intelligence (XTI) w praktyce - Socradar / iIT Distribution Polska (Kazimierz Osiński, Marcin Kornafel)  
+4. Nowy standard efektywności SIEM: obniż koszty, unowocześnij infrastrukturę oraz uprość migracje z Cribl - iIT Distribution Polska (Bartosz Galoch, Aleksander Jagosz)  
+5. MDR – nowa era cyberbezpieczeństwa Cyberoo (Adam Brzozowski, Daniel Daszkiewicz, Marcin Śniecikowski)  
+6. Rozwiązywanie codziennych wyzwań cyberbezpieczeństwa za pomocą NDR GreyCortex (Jarosław Chodkiewicz, Marcin Śniecikowski)  
+7. AI vs AI Zmierzch Samotnego Bezpiecznika Radware (Mariusz Baczyński, Aleksander Jagosz)  
+<br>
+<br>
+
+**DataCommunityPL 147 - Databricks + LLM**  
+2 października 2025  
+https://www.meetup.com/pl-PL/data-community-warsaw/events/311201848/  
+1. LLMs & Natural Language Processing – Unlocking the Future of AI Communication - Abhilekh Verma (MVP)  
+2. Niedoceniane supermoce Databricks - Nowoczesny process transfromacji danych - Mariusz Kujawski  
+<br>
+<br>
+
 **Made in China Hackbreakers' Meetup 25x9**  
 30 września 2025  
 https://www.hackbreakers.pl/  
