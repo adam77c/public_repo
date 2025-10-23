@@ -1,3 +1,49 @@
+Gen AI Leader Edition [EMEA]
+22 - 23 października 2025
+https://rsvp.withgoogle.com/events/google_cloud_launchpad_for_women_emea_2025_edition_2
+
+
+
+AI AI AaA => AI Agents Identification AuthN&Auth
+21 października 2025
+https://www.meetup.com/pl-PL/dev-js/events/311168442/
+1. AI AI AaA => AI Agents Identification AuthN&AuthZ - Daniel Krasnokucki
+2. Authentication and Authorization in Distributed Systems - Done Right? - Marcin Sowa
+
+
+Październikowe spotkanie edukacyjne ISC2 Poland Chapter | 16.10.2025 | NTT Data lub Online
+16 października 2025
+https://evenea.pl/pl/wydarzenie/ISC2ChapterPL-October2025
+NDR - Nowa era widoczności i reakcji w cyberbezpieczeństwie (Mateusz Gajda, Jarosław Chodkiewicz, Karol Niemyjski, Dominik Czyż, Maciej Wilamowski, Robert Dąbroś, Kacper Zaryczny)
+
+
+AWS Data & AI Day
+15 października 2025
+https://aws-experience.com/emea/de-central-growth/event/0adf0775-8309-4e35-8f72-f8d95d68ad86
+1. MonoBank: How Developing and Adopting Generative AI Tools Changes Company Culture
+2. DocPlanner (AI/ML) *No Time to Whisper: GPU-Powered Doctor Visit Transcriptions
+3. Building the Modern Lakehouse with Apache Iceberg on AWS
+4. Snowflake: How AI Automates the Bidding Process for Leasing Contracts
+
+
+DC4822 (Warsaw DEFCON Group) Meetup #10
+10 października 2025
+https://www.meetup.com/pl-PL/dc4822/events/311283617/
+1. Certified stupid: jak ogarnąć siebie – Piotr Maćkowski
+2. IBM Mainframe: najbardziej (nie)bezpieczna platforma na świecie? – Bartłomiej "Bercik" Kacprzak
+
+
+AWS Meetup 10/2025 - AWS User Group Warsaw [EN]
+9 października 2025
+https://www.meetup.com/pl-PL/aws-user-group-warsaw/events/311183094/
+Building a scalable system using AWS serverless - a case study (Maciej Rogosz)
+
+
+Dell Technologies Forum
+9 października 2025
+https://events.dell.com/event/705e1d6d-ce8f-4294-bd87-2a111be5abe5/post-event
+
+
 SEVENET SECURITY ROADSHOW
 7 października 2025
 https://roadshow.sevenet.pl/warszawa/#agenda
