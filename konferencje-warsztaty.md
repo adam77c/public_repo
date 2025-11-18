@@ -1,3 +1,60 @@
+**Ochrona poczty na sterydach, czyli Opswat i Proofpoint w inspekcji plików i nie tylko**  
+18 listopada 2025  
+https://trafford.pl/events/ochrona-poczty-na-sterydach-czyli-opswat-i-proofpoint-w-inspekcji-plikow-i-nie-tylko/  
+1. Ochrona poczty na sterydach – czyli Opswat i Proofpoint w inspekcji plików i nie tylko – Marcin Galas, Trafford oraz Łukasz Okólski, Opswat  
+2. Poczta elektroniczna jako wektor ataku: techniczna i regulacyjna analiza ryzyka bezpieczeństwa komunikacji – Jakub Skrodzki, Trafford  
+<br>
+<br>
+
+**Google Cloud Security Masterclass: Warsaw**  
+17 listopada 2025  
+https://cloud.google.com/events/security-masterclass-warsaw/google-office  
+1. Google Workspace - DNA-level protection  
+2. Introduction to SecOps  
+3. Introduction to Security Command Center Enterprise  
+4. Bindplane with Google SecOps _ Forwarders replacement  
+5. OChK Security Compass  
+<br>
+<br>
+
+**Google Cloud Core Infrastructure**  
+7 listopada 2025  
+https://info.jellyfish.com/google-cloud-fundamentals-core-infrastructure-07-11-2025-0  
+<br>
+<br>
+
+**Box Tech meetup #1 - Leadership & AI**  
+6 listopada 2025  
+https://www.meetup.com/pl-pl/box-tech-meetup-warsaw/events/311237524/  
+<br>
+<br>
+
+**Cloud Native Warsaw: CNCF 10th Anniversary Special at Google Headquarters**  
+29 października 2025  
+https://community.cncf.io/events/details/cncf-cloud-native-warsaw-presents-ctencf-birthday-bash-warsaw/  
+1. Climate-Conscious Kubernetes: Measuring and Optimizing Energy Consumption in Container Environments  
+2. Continuous profiling: How you'll be measuring prod in a year - Daniel Pacak  
+<br>
+<br>
+
+**Celebrating 15 years of OpenStack**  
+27 października 2025  
+https://www.meetup.com/pl-pl/openinfra-user-group-poland/events/311403021/  
+1. Consistent and Secure Default RBAC in OpenStack, Sławomir Kapłonski from Red Hat & Michał Nasiadka from Stackhpc  
+2. Logical flow tracing in OVN using ovn-trace tool - practical examples leveraging AI assitants for generating microflows and trace output intepretation, Damian Bulira from Opera  
+3. Tech Talk Radosław Smigielski from Red Hat  
+<br>
+<br>
+
+**Product Managers Society - AI & Research**  
+24 października 2025  
+https://www.meetup.com/pl-pl/warsaw-society-of-product-managers/events/311523516/  
+1. Między intuicją a Insightem, czyli nie tylko badacz może badać - Zuza Cichowska  
+2. Co mają wspólnego ze sobą podcasty, modele językowe i dlaczego nigdy nie patrzę na statystyki - Karol Stryja  
+3. Jak AI zmienia sposób, w jaki tworzymy produkty? Damian Augustyn  
+<br>
+<br>
+
 **Gen AI Leader Edition [EMEA]**  
 22 - 23 października 2025  
 https://rsvp.withgoogle.com/events/google_cloud_launchpad_for_women_emea_2025_edition_2  
