@@ -1,3 +1,14 @@
+
+**SecureWay Meetup #7 - Zero Trust. Między teorią a praktyką**   
+18 listopada 2025  
+https://secureway.pl/meetup/  
+1. Startup Miesiąca: Michał Gryczka z defguard.net  
+2. Wiktor Szymański, Empik - "Wyciek, którego nie było…"  
+3. Paweł Szczepski, Bank Gospodarstwa Krajowego - "Security Champions. Droga do budowy kompetencji cyberbezpieczeństwa w działach technicznych"  
+4. Panel dyskusyjny - "Czy czeka nas cybersuwerenność"? z udziałem: Mateusz Chrobok, Piotr Szeptynski, prowadzi: Maciej Jan Broniarz  
+<br>
+<br>
+
 **Ochrona poczty na sterydach, czyli Opswat i Proofpoint w inspekcji plików i nie tylko**  
 18 listopada 2025  
 https://trafford.pl/events/ochrona-poczty-na-sterydach-czyli-opswat-i-proofpoint-w-inspekcji-plikow-i-nie-tylko/  
