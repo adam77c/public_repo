@@ -1,3 +1,30 @@
+**Google Cloud EMEA Cybersecurity Forecast 2026**  
+25 listopada 2025  
+https://www.brighttalk.com/webcast/17758/652675  
+Dr Jamie Collier, Lead Threat Intelligence Advisor (Europe); Google Cloud Security  
+<br>
+<br>
+
+**Hackbreakers’ Meetup 25x11 Warszawa - Too Good To Be True**  
+24 listopada 2025  
+<br>
+<br>
+
+**Sui Introduction Workshop**  
+21 - 22 listopada 2025  
+https://luma.com/dxv0263o?tk=nvQPgm  
+Modules 1–3: Blockchain, Sui & Move Basics.  
+Modules 4-5: Frontend interactions, distinct Move features + a Live Coding Session.  
+<br>
+<br>
+
+**Offsec Warsaw Chapter 0x01 - Kickoff**  
+20 listopada 2025  
+https://www.meetup.com/offsec-warsaw-chapter/events/311641225/?eventOrigin=group_past_events  
+1. Odkrywanie podatności interpretera Lua w Redis  
+2. War Gaming - Gdyby Red i Purple miało dziecko - Przemysław Kępa  
+<br>
+<br>
 
 **SecureWay Meetup #7 - Zero Trust. Między teorią a praktyką**   
 18 listopada 2025  
