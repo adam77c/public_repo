@@ -1,3 +1,21 @@
+**Listopadowe spotkanie edukacyjne ISC2 Chapter Poland**  
+27 listopada 2025  
+https://app.evenea.pl/event/isc2chapterpl-november2025/  
+1. Krzysztof Wilczyński & Tomasz Wilczyński "Misja Świadomość - od teorii do skutecznej zmiany zachowań"  
+2. Paweł Łaskarzewski: "FINANSE NA ŻYWO: Tokenizacja Globalnych Aktywów, Stablecoiny i Śmierć SWIFT-a. Jak Blockchain Redefiniuje Własność i Bezpieczeństwo Systemowe"  
+3. Marek Zmysłowski & Konrad Jędrzejczyk: "Gdy AI zmyśla i dyskryminuje - praktyczne spojrzenie na halucynacje i uprzedzenia w LLMach"  
+<br>
+<br>
+
+**Elastic Day Polska | Wydanie  Warszawskie**  
+27 listopada 2025  
+https://events.elastic.co/EDWarsaw  
+1. Deploy, Manage, Repeat: Living with ECE – Elastic Cloud Enterprise On-Prem - Cezary Bartsch | Trafford IT  
+2. From Hype to Impact: Building AI That Delivers Real Value - Aleksander Kolev, Senior Manager, Value Engineering | Elastic  
+3. AI in Observability Support in Monitoring - Maciej Szymczyk | AMP S.A  
+<br>
+<br>
+
 **Google Cloud EMEA Cybersecurity Forecast 2026**  
 25 listopada 2025  
 https://www.brighttalk.com/webcast/17758/652675  
