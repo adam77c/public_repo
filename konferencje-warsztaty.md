@@ -1,3 +1,18 @@
+
+**MFA, FIDO2, smart card management jako ochrona dostępu nowej generacji**  
+1 grudnia 2025  
+https://trafford.pl/events/mfa-fido2-smart-card-management-jako-ochrona-dostepu-nowej-generacji/  
+1. MFA, FIDO2, Smart Card Management jako ochrona dostępu nowej generacji – Jakub Marczuk, Trafford  
+2. Ochrona przez ograniczenie powierzchni ataku – co UKSC mówi o MFA – Jakub Skrodzki i Krystian Pastor, Trafford  
+<br>
+<br>
+
+**BSidesWarsaw2025**  
+28-29 listopada 2025  
+https://bsides.org/w/page/161081304/BSidesWarsaw2025  
+<br>
+<br>
+
 **Listopadowe spotkanie edukacyjne ISC2 Chapter Poland**  
 27 listopada 2025  
 https://app.evenea.pl/event/isc2chapterpl-november2025/  
