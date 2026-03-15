@@ -1,3 +1,91 @@
+
+
+
+ISSA #33 Warszawa: Cyfrowy Senior oraz bezpieczeństwo sieci domowej
+12 marca 2026
+https://local.issa.org.pl/event/33-warszawa-cyfrowy-senior-oraz-bezpieczenstwo-sieci-domowej/
+1. Jak tłumaczyć bezpieczeństwo Seniorom bez słów phishing, malware, spoofing… – Marta Skonieczna i Patryk Czychewicz
+2. Monitoring sieci domowej – po co to robić i jak – Krzysztof Smaga
+
+vLLM Inference Meetup Warsaw
+10 marca 2026
+https://luma.com/fxn83r1l?tk=HqaVHi
+1. Intro to vLLM and Project Update - ​Michael Goin, vLLM Core Committer and Principal Engineer, Red Hat AI
+2. Powering JetBrains IDE Features with AI - ​JetBrains AI Team
+3. Demo: Next Edit Suggestion (NES), Using vLLM to Enable Local and Cloud-Based Edits - ​JetBrains AI Team
+4. CPU Weights Offloading in vLLM with FlexTensor - Blazej Kubiak, Sr. Deep Learning Software Engineer, NVIDIA
+5. Intro to vLLM-Omni: Easy, Fast, and Cheap Omni-Modality Model Serving - ​Nicolò Lucchesi, vLLM Core Committer and Sr. Software Engineer, Red Hat AI
+6. Scaling LLM Inference on Kubernetes with llm-d: Fast, Cost-Efficient, Production-Ready with vLLM - ​Michael Goin, vLLM Maintainer and Principal Engineer, Red Hat AI
+
+
+Marcowe spotkanie edukacyjne Grupy ISC2 Poland Chapter
+5 marca 2026
+https://isc2chapter-poland.org/spotkanie/marcowe-spotkanie-edukacyjne-grupy-isc2-poland-chapter-5-03-2026-1700-2100/
+1. „Jak centralizacja cyberbezpieczeństwa pomaga w reakcji na cyberataki?” Kamil Drzymała
+2. „Footprint prezesa jako wektor ataku” Piotr Oleksiak
+
+
+Commvault SHIFT 2026
+4 marca 2026
+https://discover.commvault.com/event-shift-live-warsaw-registration.html
+1. Panel dyskusyjny CISO pod patronatem CSO Counsil: 
+Ransomware pod lupą - wnioski po ataku.
+Uczestnicy panelu:
+    Piotr Albrecht, Chief Information Security Officer, DPD
+    Krzysztof Malesa, National Security Officer, Microsoft
+    Mateusz Śliwiński, Cybersecurity Departament Manager, Rossmann
+    Krzysztof Szczepański, Dyrektor Departamentu Bezpieczeństwa i Ryzyka, Krajowa Izba Rozliczeniowa
+    Alina Zając, Solution Manager IT, Security Manager / CERT Head PL, E.ON
+    Andrzej Gab, Z-ca dyrektora Departamentu Cyberbezpieczeństwa, Velobank
+2. Siła przywództwa w warunkach presji: negocjacje i strategie przetrwania - Paweł Mateńczuk ps.Naval
+
+
+Paved Roads to Scale (Box Tech)
+23 lutego 2026
+https://www.meetup.com/pl-pl/box-tech-meetup-warsaw/events/312912979/?eventOrigin=rsvp_confirmation_suggested_events
+1. One Job, Many Worlds: Product Management in Startups vs Enterprises by Jakub Piech & Q&A
+2. The Paved Path: Accelerating Development Velocity Through Opinionated Infrastructure by Marcin Borkowski & Q&A
+
+
+DC4822 (Warsaw DEFCON Group) Meetup #11
+20 lutego 2026
+https://www.meetup.com/pl-pl/dc4822/events/313217776/?from=ref
+1. gRPC: Szybko, binarnie… i bezpiecznie? Anatomia testów penetracyjnych nowoczesnych API - Radosław Fido
+2. Chce Więcej: czyli czego nie pokazali w filmie o blik'ach - historie prawdziwe – Miłosz Piasecki
+
+
+SysOps/DevOps Warszawa MeetUp #82
+19 lutego 2026
+https://www.meetup.com/pl-pl/sysopswarszawa/events/313004515/?eventOrigin=rsvp_confirmation_suggested_events
+1. "Multi-tenancy bez bólu: design i best practices. Tenant Management od onboardingu po observability" - Agata Skorupka
+2. “DevSecOps w środowisku multicloud” - Konrad Sagała
+
+
+I Love Free Software Day 2026 - Warszawa
+13 lutego 2026
+https://mobilizon.pl/events/cbc9bfd0-a4b9-4f96-bdfc-5291b4d405b5
+
+
+ISSA #32 Warszawa: Rok z DORA
+12 lutego 2026
+https://local.issa.org.pl/event/32-warszawa-rok-z-dora/
+1. Garść doświadczeń po roku funkcjonowania DORA – Mikołaj Otmianowski.
+2. Od projektu do odporności: pierwsze 12 miesięcy z DORA – Piotr Bukowski.
+
+
+2025
+
+
+Hackbreakers' Meetup 25x12 - Jak nie porywać samolotów
+18 grudnia 2025
+
+
+ISSA Jak stworzyć 500 mln $, wprowadzić je do obrotu i nie oberwać
+11 grudnia 2025
+https://local.issa.org.pl/event/jak-stworzyc-500/
+Jak stworzyć 500 mln $, wprowadzić je do obrotu i nie oberwać – Mateusz Sabaj, Analityk Threat Intelligence w Netia
+
+
 MFA, FIDO2, smart card management jako ochrona dostępu nowej generacji
 1 grudnia 2025
 https://trafford.pl/events/mfa-fido2-smart-card-management-jako-ochrona-dostepu-nowej-generacji/
