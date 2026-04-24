@@ -1,3 +1,123 @@
+**CISSP Day 2026**  
+23 kwietnia 2026  
+https://www.ey.com/pl_pl/events/2026/04/ey-cissp-day-2026  
+1. "Zarządzanie podatnościami w środowiskach OT - Droga Środka" - Tomek Miklis & Mateusz Fiedorowicz  
+2. "Authentication is all we need: managing non-human identity access" - Adrian Kapczyński  
+3. "Zero Trust w erze AI i NIS2 - kto kontroluje systemy podejmujące decyzje?" - Olek Danczewski  
+4. Debata 2 - Wdrożenie NIS2 i nowelizacja UoKSC (Kamil Pszczółkowski, Kamil Drzymała, Magdalena Sołtysiak)  
+5. Debata 3: Panel dyskusyjny z udziałem publiczności (Piotr Ciepiela, Jacek Grymuza, Tomasz Brożek, Magda Chelly)  
+<br>
+<br>
+
+**SecureWay Meetup #9: Security as a code Bezpieczeństwo w tworzeniu oprogramowania**  
+21 kwietnia 2026  
+https://secureway.pl/meetup/swm9.html  
+1. Striga.ai (Startup miesiąca) - Bartłomiej Dmitruk  
+2. „Halucynacje, pętle i powłoki - czyli sukcesy i porażki w wykorzystaniu agentów AI w pentestach” - Mariusz Kędziora (PSE S.A.)  
+3. „Bezpieczne lądowisko w chmurze” - Emil Wasilewski i Filip Rejch  
+<br>
+<br>
+
+**IV Konferencja Naukowo Techniczna OpenBIZ Wrocław**  
+16 kwietnia 2026  
+https://konferencja2026.openbiz.pl/  
+1. ppłk (rez.) Maciej Korowaj – Cyberbezpieczeństwo w aspekcie wojny hybrydowej prowadzonej przez Federację Rosyjską  
+2. dr Leonard Dajerling – Atak C-DoS (Cognitive Denial of Service) – paraliż decyzyjny w ekosystemie wojny kognitywnej  
+3. Mieczysław Pruszyński, OpenBIZ – Kryteria audytowe/wdrożeniowe KSC2  
+4. Cezar Cichocki, OpenBIZ – Pomiar ryzyka dla systemów IT, OT, IoT, AI/LLM oraz Cloud: aktualne możliwości oraz nadchodzące rozszerzenia funkcjonalności badań z wykorzystaniem systemów Tenable  
+5. Marian Giersz, DWF – Czy więcej regulacji w świecie technologii ma sens?  
+<br>
+<br>
+
+**Radware CybersecTALK**  
+15 kwietnia 2026  
+https://gbl.radware.com/LP=2594?elqTrackId=2A7B8B687F913BBE5F124F9F426863A9&elq=7aa64c6950e149cb931d5cdc734ab425&elqaid=12703&elqat=1&elqCampaignId=8025&elqak=8AF512FD4E5B0E74F766287F506D8DAAC124461F5690660E93DE2A460E0A17D4B87F  
+<br>
+<br>
+
+**NetFormers Security Day**  
+14 kwietnia 2026  
+https://netformers-security-day-2026.gridaly.com/  
+1. Starcie Tytanów: Cisco & Extreme Networks & Fortinet - Panel dyskusyjny: Tomasz Jedynak & Adam Minowski & Szymon Poliński  
+2. IBM FlashSystem:  Szara eminencja bezpieczeństwa - Marcin Sołtysiak (IBM) & Artur Król (IBM)  
+3. AI vs AI - nowy wyścig zbrojeń  w cyberobronie - Tomasz Goraziński (KELA)  
+4. Phishing 2.0: Preze który nie istnieje - Marcin Małaszuk (Cyberly.ai) & Krzysztof Jóźwik (NetFormers)  
+5. Gdy sieć zaczyna mówić: dlaczego NDR staje się koniecznością w erze AI? Monika Bakura (GREYCORTEX) & Jarosław Chodkiewicz (GREYCORTEX)  
+6. Widzieć więcej niż inni: jak usługi DDI i monitoringu odmieniają reguły gry w sieci - Sławomir Białas (BlueCat) & Radek Paprzycki (NetFormers)  
+7. Cyberbezpieczeństwo do potęgi kwantowej - Marcin Bała (Salumanus) & Łukasz Sukiennik (Salumanus)  
+8. Debata z udziałem przedstawicieli Politechniki Warszawskiej - AI w zastosowaniach sieciowych i cyberbezpieczeństwie - dr Jędrzej Bieniasz, prof. Teodor Buchner, dr Katarzyna Kamińska (Politechnika Warszawska) & Sebastian Strzelak (NetFormers)  
+<br>
+<br>
+
+**DC4822 (Warsaw DEFCON Group) Meetup #12**  
+10 kwietnia 2026  
+https://www.meetup.com/pl-pl/dc4822/events/314119441/?eventOrigin=group_upcoming_events  
+1. Nie mów mi, że masz plan. Pokaż mi. - Łukasz Basa  
+2. Kuery, Tindery, Łotsapy, Tiktoki, Reklamy i Telegramy … - historia pewnego oszustwa - Adam Paciuszkiewicz  
+<br>
+<br>
+
+**ISSA #34 Warszawa: Nowa oś bezpieczeństwa – CTEM i Threat Intelligence**  
+9 kwietnia 2026  
+https://local.issa.org.pl/event/ctem-cti/  
+Arkadiusz Ferenc, Damian Hoffman, Krystian Pastor  
+<br>
+<br>
+
+**AI w produkcie - Od pomysłu do MVP w weekend | BRAVE AI COMMUNITY WARSZAWA #2**  
+1 kwietnia 2026  
+https://luma.com/zy84pw49?tk=SQEIal  
+1. CAVAC - system operacyjny firmy napędzany AI, którego nie planowałem - Igor Pielas (CEO Activy i twórca VibeCoding Camp)  
+2. Wyklikaj swojego agenta AI - Paweł Twardziak (Principal Software Developer, LangChain Expert)  
+3. Zespoły Product Builderów - Wojtek Strzałkowski (współtwórca AI Product Heroes, doświadczony lider z m.in. GOG i Allegro)  
+<br>
+<br>
+
+**Hitachi Vantara**  
+26 marca 2026  
+https://liveevents.hitachivantara.com/hvexchangewarsaw/agenda  
+1. Budowanie Odporności Cyfrowej. Architektura w praktycznym zastosowaniu. Cyber Twierdza - analityka, skanowanie, odtwarzanie. Live demo  
+2. Gość Specjalny: Cyberbezpieczeństwo w strukturach sił zbrojnych  
+3. Prezentacja Commvault: W głowie hackera – jak budować cyberodporność zanim zaatakują  
+4. Prezentacja Veeam: Data Security Posture Management - o co tak naprawdę chodzi?  
+5. Twoje dane przetrwają wszystko – object storage w erze AI i nieuchronnych cyberataków  
+6. Gość Specjalny: "Bezpiecznie już było" - dr Roman Polko  
+<br>
+<br>
+
+**Solution Delivery 2.0: jak AI redefiniuje role w zespołach wytwórczych jutra**  
+25 marca 2026  
+https://www.meetup.com/pl-pl/warsaw-tech-in-logistics-meetup-group/events/313539303/  
+Prelegent: prof. SGH dr hab. Andrzej Sobczak  
+* dlaczego wchodzimy w nową erę wytwarzania oprogramowania  
+* jak AI zmienia sposób projektowania, walidowania i budowania systemów,  
+* jak zmienią się role w zespołach wytwórczych jutra  
+* które kompetencje będą zyskiwać na wartości, a które będą coraz bardziej automatyzowane,  
+* jak przygotować się do roli lidera transformacji, zamiast biernie się jej przyglądać,  
+<br>
+<br>
+
+**SecureWay Meetup #8: Hybrid Security - jak zamykać realne furtki wejścia**  
+24 marca 2026  
+https://secureway.pl/meetup/swm8.html  
+1. Zarządzania ryzykiem ludzkim w cyberbezpieczeństwie - Cyberly (Startup miesiąca): Marcin Małaszuk  
+2. VPN: drzwi wejściowe, które zapomniałeś zamknąć - Miłosz Kaniewski (Fudo Security)  
+3. DevSecOps w środowisku multicloud - Konrad Sagala (Alior Bank)  
+4. Copilot Your AI Security - when guide rails are not enough - Kamil Bączyk (Microsoft)  
+<br>
+<br>
+
+**Cloudflare Experience Day**  
+24 marca 2026  
+https://forms.office.com/Pages/ResponsePage.aspx?id=mB0kj6z4LUmGtIEH1yB8Isk1_blwARhDkeQ2k95ACjBUQlU5RjJUSksySEdVMzVYR0hGQ0ZaUkVSUS4u  
+Całodniowe warsztaty:  
+* zabezpieczanie aplikacji internetowych przed współczesnymi zagrożeniami,  
+* zwiększanie ich wydajności i dostępności dla użytkowników,  
+* wdrożenie modelu Zero Trust w organizacji,  
+* zapewnienie bezpiecznegp dostępu do zasobów bez tradycyjnego VPN.  
+<br>
+<br>
+
 **Semafor Security Management Audit Forum 2026**  
 16 - 17 marca 2026  
 https://semaforkonferencja.pl/  
