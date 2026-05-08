@@ -1,3 +1,39 @@
+**Majowe spotkanie edukacyjne ISC2 Chapter Poland w Warszawie**  
+7 maja 2026  
+https://isc2chapter-poland.org/spotkanie/majowe-spotkanie-edukacyjne-isc2-chapter-poland-w-warszawie/  
+1. Wojtek Michalewski: „Wykorzystanie kluczy sprzętowych i pomysły na ich skalowanie w organizacjach w oparciu o FIDO2”  
+2. Przemyslaw Przybylak: „Cyberbezpieczeństwo w NATO”  
+<br>
+<br>
+
+**AWS Summit Warsaw**  
+6 maja 2026  
+https://aws.amazon.com/events/summits/warsaw/  
+<br>
+<br>
+
+**Eskadra Bielika – Warszawa**  
+29 kwietnia 2026  
+https://luma.com/glcl5e7c?tk=J2u1mk  
+* budowanie systemów RAG – od struktury danych, przez embeddingi, po jakość odpowiedzi,  
+* ​tworzenie prostego UI dla aplikacji,  
+* ​projektowanie agentów AI i ich orkiestracja (w tym praca z narzędziami i podejściami typu MCP),  
+* ​łączenie modeli z infrastrukturą (GCP, BigQuery) i tworzenie działających rozwiązań,  
+* ​myślenie o AI jako o elemencie większego systemu, a nie pojedynczej funkcji.  
+<br>
+<br>
+
+**ElevenLabs Budowanie skalowalnych agentów głosowych AI w praktyce**  
+28 kwietnia 2026  
+https://app.livestorm.co/elevenlabs/warsztaty-na-zywo-budowanie-skalowalnych-agentow-glosowych-ai-w-praktyce?_hsmi=414713247  
+* Jak wiodące przedsiębiorstwa wdrażają dziś głosowych agentów AI w środowiskach produkcyjnych  
+* Jak budować multimodalnych agentów AI w różnych kanałach  
+* Jak wygląda gotowy do produkcji tech stack od początku do końca  
+* Jak ocenić kontrolę, szybkość wejścia na rynek i skalowalność dla organizacji  
+* Live demo + wgląd w najnowsze funkcje ElevenAgents  
+<br>
+<br>
+
 **CISSP Day 2026**  
 23 kwietnia 2026  
 https://www.ey.com/pl_pl/events/2026/04/ey-cissp-day-2026  
