@@ -1,3 +1,94 @@
+ISC2 Lipcowe spotkanie edukacyjne 
+2 lipca 2026
+https://isc2chapter-poland.org/spotkanie/lipcowe-spotkanie-edukacyjne-2-07-2026/
+1. „Zero Trust by Design – Redukcja Ryzyka poprzez ASR i Application Control w Architekturze Endpoint Security” - Jakub Szopiński, Szymon Doziński
+2. „Zabezpiecz swój łańcuch dostaw: Nowoczesne zarządzanie ryzykiem dostawców w dobie NIS 2 i DORA” - Tomasz Gola
+
+
+DC4822 (Warsaw DEFCON Group) Meetup #13
+19 czerwca 2026
+https://www.meetup.com/pl-pl/dc4822/events/315180701/
+1. Krajobraz bezpieczeństwa polskiego Internetu według CERT Polska - Michał Dondajewski
+2. BrAInwashing, czyli jak ogłupia się sztuczną inteligencję - Daniel Świątek
+
+
+SysOps/DevOps Warszawa MeetUp #86
+18 czerwca 2026
+https://www.meetup.com/pl-pl/sysopswarszawa/events/314892694/
+1. “Po co AWS-owi OpenSearch do monitoringu, jak ma CloudWatch?“ - Dominik Gubrynowicz
+2. Lightning Talk: “DevOps-driven API Governance w praktyce” - Andrzej Jarzyna, Krzysztof Madeński
+3. “Mamo, nie teraz, właśnie odpalam botnet” - Konrad Tarnawski
+
+
+Socjotechnika i SOC - ISSAPolskalocal #36 Warszawa
+11 czerwca 2026
+https://local.issa.org.pl/event/36-warszawa-socjotechnika-soc/
+1. Twój mózg jako cel ataku – jak socjotechnika wykorzystuje to jak myślisz (Kamil Kuć)
+2. Od Enigmy do nowoczesnych SOC – rola kobiet w cyberbezpieczeństwie (Wiktoria Zając, Krzysztof Smaga)
+
+
+Sycope Day 2026
+11 czerwca 2026
+https://event.sycope.com/sycope-day-26
+1. Sycope w praktyce: Sonda, Security i Packet Recorder
+2. Sycope Cloud
+3. Roadmapa Sycope: open source, SNMP i nowe możliwości platformy
+
+
+Cyberbezpieczeństwo do potęgi kwantowej - Warsztaty technologiczne netformers
+2 czerwca 2026
+
+
+OSEC FORUM 2026
+https://osecforum.pl/edycja2026/
+26 maja 2026
+1. One Store to Rule Them All: Building a Sovereign AI Data Foundation That Delivers Results - Roland Wammers (MinIO)
+2. Ekosystem AI w Ansible: Od Serwerów MCP po Intelligent Assistant - Jacek Skórzyński (Red Hat)
+
+
+Allegro Tech Talks #49 - Engineering Edition
+21 maja 2026
+https://www.meetup.com/pl-pl/allegrotech/events/314691345/?eventOrigin=group_events_list
+1. Thread Pool i czas czekania w kolejce: Bottleneck, którego nawet AI nie znalazł - Mateusz Nalepa (Senior Software Engineer)
+2. AI-First w skali Allegro: Jak Agentic Engine zrewolucjonizował Homepage? - Piotr Ceranek (Manager, Engineering)
+
+
+Zespół + AI: nowy model pracy, który działa (Google Cloud Agentic Work AI Live + Labs) FOTC 
+21 maja 2026
+https://fotc.com/pl/agentic-work-zespol-ai/
+1. Zespół + AI: Tak to działa w FOTC
+2. Twoja ścieżka transformacji: Od wizji do wdrożenia (część 1)
+3. Twoja ścieżka transformacji: Od wizji do wdrożenia (część 2)
+4. Panel z klientem
+5. Następny krok: gotowi na zmianę?
+
+
+Data, knowledge, independence – how to build the foundations for using AI
+20 maja 2026
+https://www.meetup.com/pl-PL/legaltech-polska-meetup/events/314540542/
+1. From Practice Management to Practice Intelligence: AI intelligence based on firm’s operative data - Karolina Silingiene (Crespect)
+2. The Legal House - What software does every law firm need? - Zbyszek Konieczny (Konieczny Consulting)
+3. Is it possible to run a profitable law firm without data? - Aku Sorainen (Sorainen)
+4. Why Legal AI Needs a Better Data Diet? - Szymon Łajszczak (Vigilex)
+5. Designing Reliable Legal AI: The Role of Reference Data and Output Examples in Prompt Templates - Jędrzej Kardach (Omnilexia) 
+6. The "No - Cloud" Legal AI - how to keep your data local? - Paweł Kulig (Gaius-Lex) 
+7. From hallucinations to evidence‑based Legal AI: how RAG changes the way lawyers work - Marta Matuszewska (Libra)
+
+
+Gemini CLI & AI Agents - Build with AI @ Google Campus by GDG Warszawa
+13 maja 2026
+https://gdg.community.dev/events/details/google-gdg-warszawa-presents-gemini-cli-amp-ai-agents-build-with-ai-google-campus-by-gdg-warszawa/
+"The name is Agent. AI Agent." workshop with Tamas
+
+
+Testowanie odporności cyfrowej organizacji - CSO Council
+12 maja 2026
+https://csoc.pl/wydarzenie/testowanie-odpornosci-cyfrowej-organizacji/
+1. Cyberekspress - autorski przegląd najważniejszych wydarzeń w branży cybersecurity - Tomasz Zawicki (Koordynator ds. Cyberbezpieczeństwa Budimex)
+2. Od oceny do działania: testowanie cyberodporności z wykorzystaniem CR-CMM - Francesco Chiarini (Founder and Chairman ISSA Cyber Resilience Community), Piotr Borkowski (Group Chief Security Officer Grupa EiP)
+3. Panel dyskusyjny - debata praktyków skupi się na wdrożeniu strukturalnego podejścia do cyberodporności wykraczającego poza zgodność z DORA, NIS2, CRA i CER 
+
+
 Majowe spotkanie edukacyjne ISC2 Chapter Poland w Warszawie
 7 maja 2026
 https://isc2chapter-poland.org/spotkanie/majowe-spotkanie-edukacyjne-isc2-chapter-poland-w-warszawie/
