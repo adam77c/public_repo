@@ -1,3 +1,10 @@
+**Inside AI: From Early Ideas to Modern Approaches and Best Practices**  
+20 lipca 2026  
+https://www.meetup.com/pl-pl/gdg-warszawa/events/315671587/  
+What's inside the AI? - Jakub Skrzyński - AGH University of Krakow (Teaching and research assistant and PhD student)  
+<br>
+<br>
+
 **ISC2 Lipcowe spotkanie edukacyjne**  
 2 lipca 2026  
 https://isc2chapter-poland.org/spotkanie/lipcowe-spotkanie-edukacyjne-2-07-2026/  
