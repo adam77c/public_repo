@@ -1,3 +1,11 @@
+**Akademia ISSA: MFA i FIDO 2**  
+14 września 2026  
+https://docs.google.com/forms/d/e/1FAIpQLSduF7FgpPZo2_gulsV3OJ21hsdKP_IBVxjCUjSqQSEnuYOS9w/viewform?pli=1  
+1. Czy hasło naprawdę jest jeszcze najlepszym sposobem, żeby chronić nasze konta? - Bartosz Cieszewski - Solutions Architect - Secfence  
+2. Klucz do Passwordless: jak FIDO2 zmienia bezpieczeństwo logowania - Wojtek Michalewski - Solutions Engineer CEE/CIS - Yubico  
+<br>
+<br>
+
 **DC4822 (Warsaw DEF CON Group) Meetup #14**  
 11 września 2026  
 https://www.meetup.com/dc4822/events/316413899/  
