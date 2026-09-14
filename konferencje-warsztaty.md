@@ -1,3 +1,56 @@
+**DC4822 (Warsaw DEF CON Group) Meetup #14**  
+11 września 2026  
+https://www.meetup.com/dc4822/events/316413899/  
+1. PowerShell w ofensywnej praktyce - Paweł Maziarz  
+<br>
+<br>
+
+**ISC2 Poland Chapter Wrześniowe spotkanie edukacyjne**  
+3 września 2026  
+https://isc2chapter-poland.org/spotkanie/wrzesniowe-spotkanie-edukacyjne-isc2-poland-chapter-3-09-2026/  
+1. „Preemptive Security w praktyce: jak cyberdeception zmienia obronę wewnętrzną organizacji - Paweł Rybczyk  
+2. „17:50-18:30 — Kacper Zaryczny: „Cyberbezpiecznik w dobie AI. Czy AI to narzędzie, czy zagrożenie?” - Kacper Zaryczny  
+3. „DevSecOps w teorii i praktyce” - Konrad Sagała  
+<br>
+<br>
+
+**Cybersecurity 17 53c #7/2026 - Warszawa**  
+20 sierpnia 2026  
+https://www.meetup.com/pl-pl/17-53c/events/315166601/  
+1. Centralizacja cyberbezpieczeństwa – czy regulacje HRV wzmocnią (cyber)bezpieczeństwo państwa? - Anna Szura  
+2. Kiedy dron słucha nie tylko Operatora - Anonymous  
+<br>
+<br>
+
+**Security First – Cyberodporność Infrastruktury Krytycznej**  
+19 sierpnia 2026  
+https://securityfirst.pl/  
+<br>
+<br>
+
+**COSMIC Convergence: Warsaw 2026**  
+1 sierpnia 2026  
+https://www.meetup.com/pl-pl/system76-community/events/315472843/  
+* Meet the COSMIC engineering team  
+* Chat with contributors and community members  
+* Q&A about COSMIC, Pop!_OS, and the roadmap  
+<br>
+<br>
+
+**Cloud Native Architecture Adoption in Financial Institutions**  
+30 lipca 2026  
+https://www.meetup.com/pl-pl/goldman-sachs-warsaw-engineering-group/events/315663965/?eventOrigin=group_upcoming_events  
+1. Cloud Native Adoption in Financial Institutions: Challenges and Complexities  
+2. Data Quality and Traceability in Reference Data  
+3. Orchestration Without Overhead: The Strategic Value of Cloud Native MWAA  
+<br>
+<br>
+
+
+
+
+
+
 **Inside AI: From Early Ideas to Modern Approaches and Best Practices**  
 20 lipca 2026  
 https://www.meetup.com/pl-pl/gdg-warszawa/events/315671587/  
